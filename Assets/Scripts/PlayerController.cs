@@ -9,11 +9,13 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Vector2 currentVelocity;
+    private Animator animator;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         // Ensure the Rigidbody2D is set up for top-down movement
         rb.gravityScale = 0f;
         rb.linearDamping = 1f;
@@ -48,5 +50,8 @@ public class PlayerController : MonoBehaviour
         
         // Apply the velocity
         rb.linearVelocity = currentVelocity;
+
+        // Update the animator with the current velocity
+        animator.SetFloat("Speed", currentVelocity.magnitude);
     }
 }
