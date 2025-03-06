@@ -37,6 +37,11 @@ public class TalkInteraction : MonoBehaviour
         {
             nearestNPC = other.gameObject;
             canInteract = true;
+
+            // Make the NPC face the player
+            Vector3 direction = transform.position - nearestNPC.transform.position;
+            SpriteRenderer spriteRenderer = nearestNPC.GetComponent<SpriteRenderer>();
+            spriteRenderer.flipX = direction.x < 0;
         }
     }
 
