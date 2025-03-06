@@ -20,17 +20,19 @@ public class TalkInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        dialogueBox.SetActive(canInteract);
         // Check for interaction input (E key)
         if (Input.GetKeyDown(KeyCode.E) && canInteract && nearestNPC != null)
         {
             // TODO: Implement NPC interaction logic here
             Debug.Log("Interacting with NPC!");
+            DialogueController.instance.NewDialogueInstance("Hello there!", "character_nun");
+            canInteract = false;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        dialogueBox.SetActive(true);
         if (other.CompareTag("NPC"))
         {
             nearestNPC = other.gameObject;
@@ -40,7 +42,6 @@ public class TalkInteraction : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        dialogueBox.SetActive(false);
         if (other.CompareTag("NPC"))
         {
             nearestNPC = null;
