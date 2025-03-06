@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -40,6 +41,15 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 445630427
+    locked: 0
+  - name: Foreground
+    uniqueID: 1941091641
+    locked: 0
+  - name: People
+    uniqueID: 2775112821
     locked: 0
   m_RenderingLayers:
   - Default
