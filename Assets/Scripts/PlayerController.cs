@@ -10,12 +10,14 @@ public class PlayerController : MonoBehaviour
     private Vector2 moveInput;
     private Vector2 currentVelocity;
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         // Ensure the Rigidbody2D is set up for top-down movement
         rb.gravityScale = 0f;
         rb.linearDamping = 1f;
@@ -50,6 +52,12 @@ public class PlayerController : MonoBehaviour
         
         // Apply the velocity
         rb.linearVelocity = currentVelocity;
+
+        // Flip the sprite based on movement direction
+        if (moveInput.x != 0 && spriteRenderer)
+        {
+            spriteRenderer.flipX = moveInput.x < 0;
+        }
 
         // Update the animator with the current velocity
         animator.SetFloat("Speed", currentVelocity.magnitude);
