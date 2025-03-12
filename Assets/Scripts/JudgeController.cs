@@ -20,6 +20,8 @@ public class JudgeController : MonoBehaviour
         player = GameObject.Find("Player");
         playerDialogue = player.GetComponent<PlayerDialogue>();
 
+        DialogueController.instance.NewDialogueInstance("Give me a minute before I give my opening statement...", "character_judge");
+
         // Judge should deliver opening statement upon entry into the court
         LoadJudgeInstructions(Instructions.JudgeStatement.DELIVER_OPENING_STATEMENT);
         StartCoroutine(ModelBridge.Bridge.ChatCompletion("http://127.0.0.1:8080",
