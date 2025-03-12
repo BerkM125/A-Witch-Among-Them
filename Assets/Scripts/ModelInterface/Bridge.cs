@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using System;
 
 namespace ModelBridge {
-    static class Bridge
+    public static class Bridge
     {
         // Load JSON payload for model and pack it correctly.
         private static string LoadJSON(string modelURI, 
@@ -32,7 +32,8 @@ namespace ModelBridge {
         // Model URL should be localhost:8080, not an specific path/endpoint.
         public static IEnumerator ChatCompletion(string modelURI,
                                                 string systemInstructions,
-                                                string prompt)
+                                                string prompt,
+                                                Action<string> callback)
         {
             // Create JSON payload
             string jsonData = LoadJSON(modelURI, systemInstructions, prompt);
@@ -54,7 +55,7 @@ namespace ModelBridge {
 
                     // Parse JSON response for chat response
                     ChatComponents.ChatResponse response = JsonConvert.DeserializeObject<ChatComponents.ChatResponse>(jsonResponse);
-                    return response.Choices[0].Message.Content;
+                    callback?.Invoke(response.Choices[0].Message.Content);
                 }
                 else
                 {
