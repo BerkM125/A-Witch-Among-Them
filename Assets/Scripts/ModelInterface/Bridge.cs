@@ -1,40 +1,66 @@
 using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
+using System.Text;
+using System.Collections;
+using Newtonsoft.Json;
+using System;
 
-public class Bridge : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+namespace ModelBridge {
+    static class Bridge
     {
-        // Initialization code here
-        StartCoroutine(ChatCompletion("http://localhost:8080"));
-    }
+        // Load JSON payload for model and pack it correctly.
+        private static string LoadJSON(string modelURI, 
+                                            string systemInstructions,
+                                            string prompt) {
+            return $@"
+            {{
+                ""messages"": [
+                    {{
+                        ""role"": ""user"",
+                        ""content"": ""{prompt}""
+                    }},
+                    {{
+                        ""role"": ""system"",
+                        ""content"": ""{systemInstructions}""
+                    }}
+                ]
+            }}";
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        // Update code here
-    }
-
-    // Return simple completion text from model URL.
-    // Model URL should be localhost:8080, not an specific path/endpoint.
-    IEnumerator ChatCompletion(string uri)
-    {
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(uri + "/v1/chat/completions"))
+        // Return simple completion text from model URL.
+        // Model URL should be localhost:8080, not an specific path/endpoint.
+        public static IEnumerator ChatCompletion(string modelURI,
+                                                string systemInstructions,
+                                                string prompt)
         {
-            yield return webRequest.SendWebRequest();
+            // Create JSON payload
+            string jsonData = LoadJSON(modelURI, systemInstructions, prompt);
+            byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonData);
 
-            string[] pages = uri.Split('/');
-            int page = pages.Length - 1;
+            // Launch request to model and retrieve result, parse for content
+            using (UnityWebRequest request = new UnityWebRequest($@"{modelURI}/v1/chat/completions", "POST"))
+            {
+                request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+                request.downloadHandler = new DownloadHandlerBuffer();
+                request.SetRequestHeader("Content-Type", "application/json");
 
-            if (webRequest.result == UnityWebRequest.Result.ConnectionError || webRequest.result == UnityWebRequest.Result.ProtocolError)
-            {
-                Debug.LogError(pages[page] + ": Error: " + webRequest.error);
-            }
-            else
-            {
-                Debug.Log(pages[page] + ":\nReceived: " + webRequest.downloadHandler.text);
+                yield return request.SendWebRequest();
+
+                if (request.result == UnityWebRequest.Result.Success)
+                {
+                    // Load all json response data
+                    string jsonResponse = request.downloadHandler.text;
+
+                    // Parse JSON response for chat response
+                    ChatComponents.ChatResponse response = JsonConvert.DeserializeObject<ChatComponents.ChatResponse>(jsonResponse);
+                    return response.Choices[0].Message.Content;
+                }
+                else
+                {
+                    Debug.LogError("Error: " + request.error);
+                }
+            
             }
         }
     }
