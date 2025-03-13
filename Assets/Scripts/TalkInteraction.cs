@@ -26,7 +26,7 @@ public class TalkInteraction : MonoBehaviour
         {
             // TODO: Implement NPC interaction logic here
             Debug.Log("Interacting with NPC!");
-            DialogueController.instance.NewDialogueInstance("Hello there!", "character_martha_goodwin");
+            DialogueController.instance.NewDialogueInstance("Hello there!", nearestNPC.gameObject.name);
             canInteract = false;
         }
     }
