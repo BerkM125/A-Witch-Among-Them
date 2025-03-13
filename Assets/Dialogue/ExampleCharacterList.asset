@@ -21,24 +21,10 @@ MonoBehaviour:
     characterSprite: {fileID: 21300000, guid: ba8bfd5754f12ad4882c21e9adedc179, type: 3}
     speechSFXBlips:
     - {fileID: 8300000, guid: 20aebd89d4cdbad429003c03468feee3, type: 3}
-  - characterName: Don
-    characterID: character_don
-    characterDescription: Wicked with the staff..
+  - characterName: Judge
+    characterID: character_judge
+    characterDescription: The Judge of this town
     characterColor: {r: 0.54901963, g: 0.2627451, b: 0.60784316, a: 1}
-    characterSprite: {fileID: 21300000, guid: b9d57320982503a41bba7639796bd65b, type: 3}
+    characterSprite: {fileID: -1773970547, guid: f0db68bbac400af44992d7e4b9a65b95, type: 3}
     speechSFXBlips:
     - {fileID: 8300000, guid: 6859d58be09970142880a7ca11d86e6c, type: 3}
-  - characterName: Raph
-    characterID: character_raph
-    characterDescription: Pizza.
-    characterColor: {r: 0.8078432, g: 0.18823531, b: 0.20000002, a: 1}
-    characterSprite: {fileID: 21300000, guid: f6dcb4b7f0ade5a49a40bac8ddbf4a0e, type: 3}
-    speechSFXBlips:
-    - {fileID: 8300000, guid: 2f5e1ff0ed49e6842b319707d66b3d60, type: 3}
-  - characterName: Mick
-    characterID: character_mick
-    characterDescription: Turdle..
-    characterColor: {r: 0.9960785, g: 0.49803925, b: 0.08627451, a: 1}
-    characterSprite: {fileID: 21300000, guid: 7c49d3f2ac31e1242a1ed576ea6fe705, type: 3}
-    speechSFXBlips:
-    - {fileID: 8300000, guid: 37c14e74db407d84d95fb186b7f92ac1, type: 3}

@@ -4,6 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Demo.unity
+    guid: 65599e2c3ad0adf42bee71a81a977013
+  - enabled: 1
+    path: Assets/Scenes/Courtroom.unity
+    guid: 98a2862f9af64464a9229f6c14709deb
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -1,0 +1,24 @@
+using UnityEngine;
+using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+
+namespace Instructions {
+    public class JudgeStatement
+    {
+        public const int DELIVER_OPENING_STATEMENT = 0x01;
+        public const int DELIVER_JUDGMENT = 0x02;
+        public const int DELIVER_FINAL_INSTRUCTIONS = 0x03;
+    }
+    public class JudgeDialogue
+    {
+        public string openingInstructions { get; set; }
+        public string judgmentInstruction { get; set; }
+        public string finalInstructions { get; set; }
+        public List<string> evidence { get; set; }
+    }
+    public class JudgeInstructions
+    {
+        public JudgeDialogue prototype { get; set; }
+    }
+}
