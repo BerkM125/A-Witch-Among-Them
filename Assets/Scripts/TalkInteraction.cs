@@ -43,6 +43,11 @@ public class TalkInteraction : MonoBehaviour
             SpriteRenderer spriteRenderer = nearestNPC.GetComponent<SpriteRenderer>();
             spriteRenderer.flipX = direction.x < 0;
         }
+
+        if (other.CompareTag("Interactable"))
+        {
+            canInteract = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -50,6 +55,11 @@ public class TalkInteraction : MonoBehaviour
         if (other.CompareTag("NPC"))
         {
             nearestNPC = null;
+            canInteract = false;
+        }
+
+        if (other.CompareTag("Interactable"))
+        {
             canInteract = false;
         }
     }
