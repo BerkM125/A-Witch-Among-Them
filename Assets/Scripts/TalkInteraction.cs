@@ -26,7 +26,7 @@ public class TalkInteraction : MonoBehaviour
         {
             // TODO: Implement NPC interaction logic here
             Debug.Log("Interacting with NPC!");
-            DialogueController.instance.NewDialogueInstance("Hello there!", "character_martha_goodwin");
+            DialogueController.instance.NewDialogueInstance("Hello there!", nearestNPC.gameObject.name);
             canInteract = false;
         }
     }
@@ -43,6 +43,11 @@ public class TalkInteraction : MonoBehaviour
             SpriteRenderer spriteRenderer = nearestNPC.GetComponent<SpriteRenderer>();
             spriteRenderer.flipX = direction.x < 0;
         }
+
+        if (other.CompareTag("Interactable"))
+        {
+            canInteract = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -50,6 +55,11 @@ public class TalkInteraction : MonoBehaviour
         if (other.CompareTag("NPC"))
         {
             nearestNPC = null;
+            canInteract = false;
+        }
+
+        if (other.CompareTag("Interactable"))
+        {
             canInteract = false;
         }
     }
