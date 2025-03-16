@@ -7,6 +7,7 @@ public class DoorController : MonoBehaviour
     private bool open = false;
     private float minDistance = 2f;
     private float minTeleportDistance = 1f;
+    private AudioSource audioSource;
 
     public Transform teleportLocation;
     void Start()
@@ -14,12 +15,13 @@ public class DoorController : MonoBehaviour
         animator = GetComponent<Animator>(); 
         circleCollider2D = GetComponent<CircleCollider2D>();
         animator.SetBool("IsOpen", false);
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update() {
         animator.SetBool("IsOpen", open);
-        if (open && Input.GetKeyDown(KeyCode.E))
-        {
+        if (open && Input.GetKeyDown(KeyCode.E)) {
+            audioSource.Play();
             // if (Vector2.Distance(transform.position, teleportLocation.position) < minTeleportDistance)
             // {
                 GameObject.FindGameObjectWithTag("Player").transform.position = teleportLocation.position;
