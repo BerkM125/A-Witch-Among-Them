@@ -10,8 +10,8 @@ namespace Instructions {
         public const int DELIVER_JUDGMENT = 0x02;
         public const int DELIVER_FINAL_INSTRUCTIONS = 0x03;
         public const int CONVERSE_WITH_PLAYER = 0x04;
-        public const int CONVERSE_WITH_DEFENDANT = 0x04;
-        public const int DELIVER_AS_DEFENDANT = 0x04;
+        public const int CONVERSE_WITH_DEFENDANT = 0x05;
+        public const int DELIVER_AS_DEFENDANT = 0x06;
     }
     public class JudgeDialogue
     {

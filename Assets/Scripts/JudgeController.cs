@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.IO;
 using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
 
 using ModelBridge;
 using Instructions;
@@ -14,18 +15,24 @@ public class JudgeController : MonoBehaviour
     string judgeInstructions;
     string judgePrompt;
     string currentSpeaker = "judgeContext";
+    string currentContext = "judgeContext";
+    Dictionary<string, string> contextSpeakerMap = new Dictionary<string, string>();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        contextSpeakerMap["judgeContext"] = "You, the judge, said";
+        contextSpeakerMap["accusedContext"] = "The accused person said";
+        contextSpeakerMap["playerContext"] = "The player said";
+
         player = GameObject.Find("Player");
         playerDialogue = player.GetComponent<PlayerDialogue>();
 
         DialogueController.instance.NewDialogueInstance("Give me a minute before I give my opening statement...", "character_judge");
-
+        SetCurrentContext("judgeContext");
         // Judge should deliver opening statement upon entry into the court
         LoadJudgeInstructions(Instructions.JudgeStatement.DELIVER_OPENING_STATEMENT);
-        StartCoroutine(ModelBridge.Bridge.ChatCompletion("http://127.0.0.1:8080",
+        StartCoroutine(ModelBridge.Bridge.ChatCompletion("https://api.deepseek.com",
                                                     judgeInstructions,
                                                     judgePrompt,
                                                     ProcessDialogue));
@@ -40,12 +47,19 @@ public class JudgeController : MonoBehaviour
         
     }
 
+    public void SetCurrentContext(string context)
+    {
+        Debug.Log("Was called");
+        currentContext = context;
+        currentSpeaker = contextSpeakerMap[context];
+    }
+
     // Send message to the Judge
     public void SendJudgeMessage(string message)
     {
         judgePrompt = message;
         DialogueController.instance.NewDialogueInstance("Let me think...", "character_judge");
-        StartCoroutine(ModelBridge.Bridge.ChatCompletion("http://127.0.0.1:8080",
+        StartCoroutine(ModelBridge.Bridge.ChatCompletion("https://api.deepseek.com",
                                                     judgeInstructions,
                                                     judgePrompt,
                                                     ProcessDialogue));
@@ -100,7 +114,8 @@ public class JudgeController : MonoBehaviour
 
             judgeInstructions = jsonObject["prototype"][judgementType].ToString();
             judgePrompt = jsonObject["prototype"][promptType].ToString() + $@"
-            \nUse the context below to aid your speech: \n{jsonObject["prototype"][contextType]}";    
+                Use the context below to aid your speech: 
+                {jsonObject["prototype"][contextType]}";    
         }
         else
         {
@@ -113,6 +128,7 @@ public class JudgeController : MonoBehaviour
     {
         DialogueController.instance.NewDialogueInstance(response, "character_judge");
         playerDialogue.EnableChat();
+        Debug.Log("enabling player chat"); 
 
         // Open the judge_instructions.json file and prepare it for writing
         string filePath = Path.Combine(Application.dataPath, "Scripts/ModelInterface/judge_instructions.json");
@@ -122,7 +138,7 @@ public class JudgeController : MonoBehaviour
             {     
                 string jsonContent = File.ReadAllText(filePath);
                 JObject jsonObject = JObject.Parse(jsonContent);
-                jsonObject["prototype"][currentSpeaker] += $@"\n{currentSpeaker} said: {response}";
+                jsonObject["prototype"][currentContext] += $@"\n{contextSpeakerMap[currentContext]} said: {response}, ";
 
                 string jsonFileContent = jsonObject.ToString();
                 using (StreamWriter writer = new StreamWriter(filePath, false))

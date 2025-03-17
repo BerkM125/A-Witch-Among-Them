@@ -2,9 +2,10 @@ using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
 using System.Text;
-using System.Collections;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 using System;
+using System.Linq;
 
 namespace ModelBridge {
     public static class Bridge
@@ -15,6 +16,7 @@ namespace ModelBridge {
                                             string prompt) {
             return $@"
             {{
+                ""model"": ""deepseek-chat"",
                 ""messages"": [
                     {{
                         ""role"": ""user"",
@@ -28,6 +30,35 @@ namespace ModelBridge {
             }}";
         }
 
+        private static string ReformatForGemini(string jsonData) {
+            Debug.Log("Reformatting JSON for Gemini API..." + jsonData);
+            var originalData = JsonConvert.DeserializeObject<ChatComponents.ChatRequest>(jsonData);            
+            var geminiData = new {
+                system_instruction = new {
+                    parts = new { 
+                        text = originalData.Messages[1].Content
+                    }
+                },
+                contents = new {
+                    parts = new {
+                        text = originalData.Messages[0].Content
+                    }
+                }
+            };
+            
+            // Convert the new JSON object to a string
+            return JsonConvert.SerializeObject(geminiData);
+        }
+
+        private static string FormatForHttp(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return string.Empty;
+
+            // Encode the string to ensure special characters don't break the HTTP request
+            return Uri.EscapeDataString(input);
+        }
+
         // Return simple completion text from model URL.
         // Model URL should be localhost:8080, not an specific path/endpoint.
         public static IEnumerator ChatCompletion(string modelURI,
@@ -36,11 +67,15 @@ namespace ModelBridge {
                                                 Action<string> callback)
         {
             // Create JSON payload
-            string jsonData = LoadJSON(modelURI, systemInstructions, prompt);
+            string jsonData = LoadJSON(modelURI, FormatForHttp(systemInstructions), FormatForHttp(prompt));
+            jsonData = ReformatForGemini(jsonData);
             byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonData);
 
+            Debug.Log("Request body: " + jsonData);
+
+            string geminiURI = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyDUKrq5_rdOpa1xwW4DHurGpOyh9kFZYFo";
             // Launch request to model and retrieve result, parse for content
-            using (UnityWebRequest request = new UnityWebRequest($@"{modelURI}/v1/chat/completions", "POST"))
+            using (UnityWebRequest request = new UnityWebRequest(geminiURI, "POST"))
             {
                 request.uploadHandler = new UploadHandlerRaw(bodyRaw);
                 request.downloadHandler = new DownloadHandlerBuffer();
@@ -52,16 +87,16 @@ namespace ModelBridge {
                 {
                     // Load all json response data
                     string jsonResponse = request.downloadHandler.text;
+                    Debug.Log("Response: " + jsonResponse);
 
                     // Parse JSON response for chat response
-                    ChatComponents.ChatResponse response = JsonConvert.DeserializeObject<ChatComponents.ChatResponse>(jsonResponse);
-                    callback?.Invoke(response.Choices[0].Message.Content);
+                    ChatComponents.GeminiResponse response = JsonConvert.DeserializeObject<ChatComponents.GeminiResponse>(jsonResponse);
+                    callback?.Invoke(response.Candidates[0].Content.Parts[0].Text);
                 }
                 else
                 {
                     Debug.LogError("Error: " + request.error);
                 }
-            
             }
         }
     }

@@ -15,6 +15,7 @@ public class PlayerDialogue : MonoBehaviour
     void Start()
     {
         judgeNPC = GameObject.Find("Judge");
+        judgeController = judgeNPC.GetComponent<JudgeController>();
     }
 
     // Update is called once per frame
@@ -24,8 +25,7 @@ public class PlayerDialogue : MonoBehaviour
 
     // Send the message made by the player to Judge
     public void SendPlayerMessage(string message)
-    {
-        judgeController = judgeNPC.GetComponent<JudgeController>();
+    { 
         judgeController.SendJudgeMessage(message);
     }
 
@@ -40,6 +40,7 @@ public class PlayerDialogue : MonoBehaviour
     private void OpenInputField()
     {
         inputFieldPrefab.SetActive(true);
+        Debug.Log("should be active");
         inputField = inputFieldPrefab.GetComponent<TMP_InputField>();
         inputField.onEndEdit.AddListener(OnEndEdit);
         inputField.ActivateInputField();
@@ -50,6 +51,7 @@ public class PlayerDialogue : MonoBehaviour
         // Upon entry, invoke the SendPlayerMessage event with the text input
         if (Input.GetKeyDown(KeyCode.Return) && canInteract)
         {
+            judgeController.SetCurrentContext("playerContext");
             SendPlayerMessage(text);
             canInteract = false;
             inputFieldPrefab.SetActive(false);
