@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 
 namespace Instructions {
+    // thoughts on swappin to Enums?
     public class JudgeStatement
     {
         public const int DELIVER_OPENING_STATEMENT = 0x01;
