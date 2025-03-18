@@ -6,7 +6,8 @@ public class TalkInteraction : MonoBehaviour
     private GameObject nearestNPC;
     private bool canInteract = false;
 
-    public GameObject dialogueBox;
+    public GameObject interactBox;
+    public DialogueBoxController dialogueBoxController;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,18 +16,20 @@ public class TalkInteraction : MonoBehaviour
         CircleCollider2D triggerCollider = gameObject.AddComponent<CircleCollider2D>();
         triggerCollider.isTrigger = true;
         triggerCollider.radius = interactionRadius;
+        // dialogueBoxController = FindObjectOfType<DialogueBoxController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        dialogueBox.SetActive(canInteract);
+        interactBox.SetActive(canInteract);
         // Check for interaction input (E key)
         if (Input.GetKeyDown(KeyCode.E) && canInteract && nearestNPC != null)
         {
             // TODO: Implement NPC interaction logic here
             Debug.Log("Interacting with NPC!");
-            DialogueController.instance.NewDialogueInstance("Hello there!", nearestNPC.gameObject.name);
+            // DialogueController.instance.NewDialogueInstance("Hello there!", "character_nun");
+            dialogueBoxController.ShowDialogue("character_nun", "Hello there!");
             canInteract = false;
         }
     }
@@ -43,11 +46,6 @@ public class TalkInteraction : MonoBehaviour
             SpriteRenderer spriteRenderer = nearestNPC.GetComponent<SpriteRenderer>();
             spriteRenderer.flipX = direction.x < 0;
         }
-
-        if (other.CompareTag("Interactable"))
-        {
-            canInteract = true;
-        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -55,11 +53,6 @@ public class TalkInteraction : MonoBehaviour
         if (other.CompareTag("NPC"))
         {
             nearestNPC = null;
-            canInteract = false;
-        }
-
-        if (other.CompareTag("Interactable"))
-        {
             canInteract = false;
         }
     }

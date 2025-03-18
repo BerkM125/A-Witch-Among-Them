@@ -197,7 +197,7 @@ TilemapRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0.00015771389, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -12198,8 +12198,9 @@ GameObject:
   - component: {fileID: 189075575}
   - component: {fileID: 189075577}
   - component: {fileID: 189075576}
+  - component: {fileID: 189075578}
   m_Layer: 5
-  m_Name: Talk
+  m_Name: DialogueBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12264,6 +12265,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189075574}
   m_CullTransparentMesh: 1
+--- !u!114 &189075578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189075574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd0bbb34e9120b4b8c9325d0139e881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 301433055}
+  nameText: {fileID: 1185111481}
+  portraitImage: {fileID: 1120900804}
+  characterData: {fileID: 11400000, guid: 1ad9fb92edca59d4da716c7407f072df, type: 2}
 --- !u!1 &245337180
 GameObject:
   m_ObjectHideFlags: 0
@@ -16312,7 +16329,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionRadius: 2
-  dialogueBox: {fileID: 1563316422}
+  interactBox: {fileID: 1563316422}
+  dialogueBoxController: {fileID: 189075578}
 --- !u!61 &410748085
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16677,7 +16695,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionRadius: 2
-  dialogueBox: {fileID: 1563316422}
+  interactBox: {fileID: 1563316422}
+  dialogueBoxController: {fileID: 189075578}
 --- !u!61 &448518699
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17291,7 +17310,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0.00015771389, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -19449,8 +19468,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleportLocation: {fileID: 0}
-  sceneName: Courtroom
-  changeScene: 1
+  sceneName: 
+  changeScene: 0
 --- !u!58 &1141105136
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Styles/DialogueBox.uss?fileID=7433441132597879392&amp;guid=882593e4cf21e0f4ea67385850e3a8e0&amp;type=3#DialogueBox" />
+    <ui:VisualElement name="Box" style="flex-grow: 1; flex-direction: row; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-image: none;">
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row; flex-basis: 75%;">
+            <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&#10;" style="overflow: visible; white-space: normal; -unity-font-definition: url(&quot;project://database/Assets/Assets/Cryo_s%20Mini%20GUI/GUI/Fool.ttf?fileID=12800000&amp;guid=33561fab8ab1c194988bab1cb2e3769d&amp;type=3#Fool&quot;); font-size: 22px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; flex-direction: column; flex-basis: 25%; align-self: center;">
+            <UXMLImage image="project://database/Assets/Assets/keybord%20and%20controller%20icons/individual%20sprites/keyboard/!.png?fileID=2800000&amp;guid=fe2303095689e4e46a3f62ad4a35157b&amp;type=3#!" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; justify-content: flex-start;" />
+            <ui:Label text="Label" style="-unity-text-align: upper-center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
