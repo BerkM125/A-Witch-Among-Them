@@ -10,6 +10,8 @@ public class DoorController : MonoBehaviour
     private AudioSource audioSource;
 
     public Transform teleportLocation;
+    public string sceneName;
+    public bool changeScene;
     void Start()
     {
         animator = GetComponent<Animator>(); 
@@ -22,10 +24,16 @@ public class DoorController : MonoBehaviour
         animator.SetBool("IsOpen", open);
         if (open && Input.GetKeyDown(KeyCode.E)) {
             audioSource.Play();
+            if (!changeScene) {
             // if (Vector2.Distance(transform.position, teleportLocation.position) < minTeleportDistance)
             // {
                 GameObject.FindGameObjectWithTag("Player").transform.position = teleportLocation.position;
             // }
+            }
+            else {
+                // Code to load the scene from sceneName string
+                UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+            }
         }
     }
 

@@ -17,13 +17,18 @@ public class JudgeController : MonoBehaviour
     string currentSpeaker = "judgeContext";
     string currentContext = "judgeContext";
     Dictionary<string, string> contextSpeakerMap = new Dictionary<string, string>();
-
+    Dictionary<string, string> contextDialogueMap = new Dictionary<string, string>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         contextSpeakerMap["judgeContext"] = "You, the judge, said";
         contextSpeakerMap["accusedContext"] = "The accused person said";
         contextSpeakerMap["playerContext"] = "The player said";
+
+        contextDialogueMap["judgeContext"] = "character_judge";
+        contextDialogueMap["accusedContext"] = "character_accused";
+        contextDialogueMap["playerContext"] = "character_player";
+
 
         player = GameObject.Find("Player");
         playerDialogue = player.GetComponent<PlayerDialogue>();
@@ -37,8 +42,6 @@ public class JudgeController : MonoBehaviour
                                                     judgePrompt,
                                                     ProcessDialogue));
 
-        // Prime judge for actual judging, afterward
-        LoadJudgeInstructions(Instructions.JudgeStatement.CONVERSE_WITH_PLAYER);
     }
 
     // Update is called once per frame
@@ -67,7 +70,7 @@ public class JudgeController : MonoBehaviour
 
 
     // Load judge instructions and prompt from JSON file
-    void LoadJudgeInstructions(int instructionType)
+    public void LoadJudgeInstructions(int instructionType)
     {
         string filePath = Path.Combine(Application.dataPath, "Scripts/ModelInterface/judge_instructions.json");
         if (File.Exists(filePath))
@@ -126,9 +129,17 @@ public class JudgeController : MonoBehaviour
     // Callback to dialogue processing
     void ProcessDialogue(string response)
     {
-        DialogueController.instance.NewDialogueInstance(response, "character_judge");
+        DialogueController.instance.NewDialogueInstance(response, contextDialogueMap[currentContext]);
         playerDialogue.EnableChat();
         Debug.Log("enabling player chat"); 
+
+        // Make sure that if the accused is currently delivering speech, it is relayed to the judge.
+        if(currentContext == "accusedContext")
+        {
+            SetCurrentContext("judgeContext");
+            LoadJudgeInstructions(Instructions.JudgeStatement.CONVERSE_WITH_PLAYER);
+            SendJudgeMessage(response);
+        }
 
         // Open the judge_instructions.json file and prepare it for writing
         string filePath = Path.Combine(Application.dataPath, "Scripts/ModelInterface/judge_instructions.json");

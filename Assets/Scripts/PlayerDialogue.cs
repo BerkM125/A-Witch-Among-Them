@@ -51,7 +51,8 @@ public class PlayerDialogue : MonoBehaviour
         // Upon entry, invoke the SendPlayerMessage event with the text input
         if (Input.GetKeyDown(KeyCode.Return) && canInteract)
         {
-            judgeController.SetCurrentContext("playerContext");
+            judgeController.SetCurrentContext("accusedContext");
+            judgeController.LoadJudgeInstructions(Instructions.JudgeStatement.DELIVER_AS_DEFENDANT);
             SendPlayerMessage(text);
             canInteract = false;
             inputFieldPrefab.SetActive(false);
