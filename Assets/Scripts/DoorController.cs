@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorController : MonoBehaviour
 {
@@ -32,7 +33,7 @@ public class DoorController : MonoBehaviour
             }
             else {
                 // Code to load the scene from sceneName string
-                UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+                UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
             }
         }
     }
