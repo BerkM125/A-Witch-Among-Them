@@ -17,7 +17,7 @@ MonoBehaviour:
     characterId: character_accused
     description: The intelligent and outspoken wife of Giles Goodwin, whose love
       of books leads to her tragic accusation.
-    characterImage: {fileID: -572503576, guid: 920bf7a050e2d974d8cb5848609a8077, type: 3}
+    characterImage: {fileID: 2111591836, guid: a7d066e6ba1848144933166c562a53b5, type: 3}
     blips:
     - {fileID: 8300000, guid: 20aebd89d4cdbad429003c03468feee3, type: 3}
   - characterName: Judge
