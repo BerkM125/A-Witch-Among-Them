@@ -203,7 +203,6 @@ public class JudgeController : MonoBehaviour
                 jsonObject["prototype"]["judgeContext"] = "";
                 jsonObject["prototype"]["accusedContext"] = "";
                 jsonObject["prototype"]["playerContext"] = "";
-                jsonObject["prototype"]["evidence"] = new JArray();
 
                 string jsonFileContent = jsonObject.ToString();
                 using (StreamWriter writer = new StreamWriter(filePath, false))
