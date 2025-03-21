@@ -31,8 +31,9 @@ public class DoorController : MonoBehaviour
                 GameObject.FindGameObjectWithTag("Player").transform.position = teleportLocation.position;
             // }
             }
-            else {
+            else if (gameObject.name == "Square") {
                 // Code to load the scene from sceneName string
+                Destroy(GameObject.FindGameObjectWithTag("Player"));
                 UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
             }
         }

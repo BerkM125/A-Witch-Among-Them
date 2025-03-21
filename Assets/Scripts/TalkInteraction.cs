@@ -22,18 +22,13 @@ public class TalkInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        interactBox.SetActive(canInteract);
         // Check for interaction input (E key)
         if (Input.GetKeyDown(KeyCode.E) && canInteract && nearestNPC != null)
         {
             // TODO: Implement NPC interaction logic here
             Debug.Log("Interacting with NPC!");
-<<<<<<< HEAD
-            DialogueController.instance.NewDialogueInstance("Why, hello there! You must be the new witch hunter in town!", nearestNPC.gameObject.name);
-=======
             // DialogueController.instance.NewDialogueInstance("Hello there!", "character_nun");
-            dialogueBoxController.ShowDialogue("character_accused", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.");
->>>>>>> 32709939f82c86e23c401b243ca8eef285709bf2
+            dialogueBoxController.ShowDialogue("character_accused", "Why hello there! You must be the new witch hunter in town!");
             canInteract = false;
         }
     }
@@ -44,6 +39,9 @@ public class TalkInteraction : MonoBehaviour
         {
             nearestNPC = other.gameObject;
             canInteract = true;
+
+            // Do this manually, putting in update is inefficient and causes errors.
+            interactBox.SetActive(canInteract);
 
             // Make the NPC face the player
             Vector3 direction = transform.position - nearestNPC.transform.position;
@@ -58,6 +56,9 @@ public class TalkInteraction : MonoBehaviour
         {
             nearestNPC = null;
             canInteract = false;
+
+            // Do this manually, putting in update is inefficient and causes errors.
+            interactBox.SetActive(canInteract);
         }
     }
 }
