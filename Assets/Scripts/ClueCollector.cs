@@ -10,7 +10,30 @@ public class ClueCollector : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        string filePath = Path.Combine(Application.dataPath, "Scripts/ModelInterface/judge_instructions.json");
+        if (File.Exists(filePath))
+        {
+            try
+            {     
+                string jsonContent = File.ReadAllText(filePath);
+                JObject jsonObject = JObject.Parse(jsonContent);
+                jsonObject["prototype"]["evidence"] = new JArray();
+
+                string jsonFileContent = jsonObject.ToString();
+                using (StreamWriter writer = new StreamWriter(filePath, false))
+                {
+                    writer.Write(jsonFileContent);
+                }
+            }
+            catch (IOException ex)
+            {
+                Debug.LogError("Error opening judge_instructions.json for writing: " + ex.Message);
+            }
+        }
+        else
+        {
+            Debug.LogError("Judge instructions file not found.");
+        }
     }
 
     // Update is called once per frame
