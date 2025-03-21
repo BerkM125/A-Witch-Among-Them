@@ -12476,7 +12476,7 @@ Transform:
   m_GameObject: {fileID: 191094320}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.894632, y: -5.3045073, z: 0.2564235}
+  m_LocalPosition: {x: -14.894632, y: -5.3045073, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16823,12 +16823,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410748078}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c038a9370ea9ce14f8a23c3309cde91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionRadius: 2
   interactBox: {fileID: 1563316422}
   dialogueBoxController: {fileID: 189075578}
 --- !u!61 &410748085
@@ -17039,10 +17038,11 @@ GameObject:
   - component: {fileID: 448518691}
   - component: {fileID: 448518694}
   - component: {fileID: 448518695}
-  - component: {fileID: 448518698}
   - component: {fileID: 448518699}
   - component: {fileID: 448518701}
   - component: {fileID: 448518700}
+  - component: {fileID: 448518702}
+  - component: {fileID: 448518703}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -17184,21 +17184,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &448518698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 448518689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c038a9370ea9ce14f8a23c3309cde91f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionRadius: 2
-  interactBox: {fileID: 1563316422}
-  dialogueBoxController: {fileID: 189075578}
 --- !u!61 &448518699
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17370,6 +17355,56 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 36b06cd81bbc2854086d009dc1c48fb9, type: 3}
   - {fileID: 8300000, guid: 74cc0627bfce62146a3537707f677630, type: 3}
   - {fileID: 8300000, guid: 466ea440ebc0ed544bc346562bde47e7, type: 3}
+--- !u!114 &448518702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448518689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c038a9370ea9ce14f8a23c3309cde91f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactBox: {fileID: 1563316422}
+  dialogueBoxController: {fileID: 189075578}
+--- !u!58 &448518703
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448518689}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.28}
+  m_Radius: 0.38
 --- !u!1 &630650858
 GameObject:
   m_ObjectHideFlags: 0
@@ -17494,7 +17529,7 @@ Transform:
   m_GameObject: {fileID: 632276904}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4, y: 1.69, z: -1.1229056}
+  m_LocalPosition: {x: -1.4, y: 1.69, z: 0}
   m_LocalScale: {x: 0.11746434, y: 0.10933905, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20704,7 +20739,7 @@ Transform:
   m_GameObject: {fileID: 1175779213}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.35, y: 1.64, z: -1.1229056}
+  m_LocalPosition: {x: -11.35, y: 1.64, z: 0}
   m_LocalScale: {x: 0.2230993, y: 0.19794966, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22055,7 +22090,7 @@ Transform:
   m_GameObject: {fileID: 1800823090}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.15, y: -0.87, z: -1.1229056}
+  m_LocalPosition: {x: -11.15, y: -0.87, z: 0}
   m_LocalScale: {x: 0.47277695, y: 0.48597947, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

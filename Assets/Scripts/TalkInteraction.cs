@@ -2,20 +2,22 @@ using UnityEngine;
 
 public class TalkInteraction : MonoBehaviour
 {
-    [SerializeField] private float interactionRadius = 2f; // Radius to detect NPCs
+    // [SerializeField] private float interactionRadius = 2f; // Radius to detect NPCs
     private GameObject nearestNPC;
     private bool canInteract = false;
 
     public GameObject interactBox;
     public DialogueBoxController dialogueBoxController;
+    private CircleCollider2D triggerCollider;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        triggerCollider = GetComponent<CircleCollider2D>();
         // Ensure we have a trigger collider for detection
-        CircleCollider2D triggerCollider = gameObject.AddComponent<CircleCollider2D>();
+        // CircleCollider2D triggerCollider = gameObject.AddComponent<CircleCollider2D>();
         triggerCollider.isTrigger = true;
-        triggerCollider.radius = interactionRadius;
+        // triggerCollider.radius = interactionRadius;
         // dialogueBoxController = FindObjectOfType<DialogueBoxController>();
     }
 
@@ -29,7 +31,7 @@ public class TalkInteraction : MonoBehaviour
             Debug.Log("Interacting with NPC!");
             // DialogueController.instance.NewDialogueInstance("Hello there!", "character_nun");
             dialogueBoxController.ShowDialogue("character_accused", "Why hello there! You must be the new witch hunter in town!");
-            canInteract = false;
+            // canInteract = false;
         }
     }
 

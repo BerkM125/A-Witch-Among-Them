@@ -18,7 +18,7 @@ public class DialogueBoxController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        SetActive(false); // Ensure the dialogue box is hidden initially
+        // SetActive(false); // Ensure the dialogue box is hidden initially
     }
 
     // Update is called once per frame
@@ -58,6 +58,7 @@ public class DialogueBoxController : MonoBehaviour
     public void SetActive(bool active)
     {
         gameObject.SetActive(active);
+        // gameObject.SetActive(true);
     }
 
     private void SetActive(bool active, string name, string dialogue, Sprite portrait)
