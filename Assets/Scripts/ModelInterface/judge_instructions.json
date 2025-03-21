@@ -14,7 +14,8 @@
     "accusedPrompt": "Respond to the witch hunter who has accused you of witchcraft. Remember, you are innocent and must defend yourself without appearing too learned or defiant, as either could be used against you in this 17th-century court.",
     "accusedContext": "\\nYou, the judge, said said: Let this court convene, and may God grant us wisdom in discerning truth from the devil's deceits. Before the Almighty and this assembly, we shall judge the accusations laid against the accused, that justice may be served in New Athens.\n, \\nYour accuser, the player, just said: YOur honor, I have seen elara vex with a broom in her house, \\nThe accused person said said: With all due respect, sir, are we now to condemn every housewife who sweeps her own floor? A broom is a tool for cleanliness, not a pact with the Devil. Are you suggesting I cannot even keep a tidy home without suspicion?\n, \\nYou, the judge, said said: You mistake diligence for innocence. The act of sweeping is not the offense, but what might be swept *under* the rug, so to speak. Are you suggesting that accusations of witchcraft are born merely from tidy homes? I assure you, the accusations brought before this court are founded on more than mere domestic habits. Now, answer truthfully: have you witnessed any unusual gatherings or practices in this town?\n, ",
     "playerContext": "",
-    "evidence": []
+    "evidence": [
+    ]
   },
   "weekOne": {}
 }

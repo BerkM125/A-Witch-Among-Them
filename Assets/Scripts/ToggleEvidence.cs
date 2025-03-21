@@ -24,6 +24,8 @@ public class ToggleEvidence : MonoBehaviour
 
     public void FlipEvidence () {
         evidenceList.SetActive(!visible);
+        Debug.Log("Visible? " + visible);
+
         visible = !visible;
 
         if(visible) {
