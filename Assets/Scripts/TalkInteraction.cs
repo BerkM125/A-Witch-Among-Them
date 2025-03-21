@@ -31,7 +31,7 @@ public class TalkInteraction : MonoBehaviour
             Debug.Log("Interacting with NPC!");
             // DialogueController.instance.NewDialogueInstance("Hello there!", "character_nun");
             dialogueBoxController.ShowDialogue("character_accused", "Why hello there! You must be the new witch hunter in town!");
-            // canInteract = false;
+            canInteract = false;
         }
     }
 
