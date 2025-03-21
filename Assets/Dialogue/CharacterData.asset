@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 476b7e138c5206148bfde9e12317ee5a, type: 3}
+  m_Name: CharacterData
+  m_EditorClassIdentifier: 
+  characters:
+  - characterName: Elara Vex
+    characterId: character_accused
+    description: The intelligent and outspoken wife of Giles Goodwin, whose love
+      of books leads to her tragic accusation.
+    characterImage: {fileID: 2111591836, guid: a7d066e6ba1848144933166c562a53b5, type: 3}
+    blips:
+    - {fileID: 8300000, guid: 20aebd89d4cdbad429003c03468feee3, type: 3}
+  - characterName: Judge
+    characterId: character_judge
+    description: The Judge of this town
+    characterImage: {fileID: -2057538539, guid: f0db68bbac400af44992d7e4b9a65b95, type: 3}
+    blips:
+    - {fileID: 8300000, guid: 6859d58be09970142880a7ca11d86e6c, type: 3}

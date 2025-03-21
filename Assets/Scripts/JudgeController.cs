@@ -31,7 +31,10 @@ public class JudgeController : MonoBehaviour
 
 
         player = GameObject.Find("Player");
+
+        Debug.Log("Fetched the player dialogue...");
         playerDialogue = player.GetComponent<PlayerDialogue>();
+        Debug.Log("Here it is: " + player.name);
 
         DialogueController.instance.NewDialogueInstance("Give me a minute before I give my opening statement...", "character_judge");
         SetCurrentContext("judgeContext");
