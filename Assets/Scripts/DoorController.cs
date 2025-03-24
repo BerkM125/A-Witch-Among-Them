@@ -20,7 +20,17 @@ public class DoorController : MonoBehaviour
         animator.SetBool("IsOpen", false);
         audioSource = GetComponent<AudioSource>();
     }
-
+    void DestroyPersistentObjects()
+    {
+        GameObject[] persistentObjects = FindObjectsOfType<GameObject>();
+        foreach (GameObject obj in persistentObjects)
+        {
+            if (obj.scene.name == null) // This checks objects in the DontDestroyOnLoad scene
+            {
+                Destroy(obj);
+            }
+        }
+    }
     void Update() {
         animator.SetBool("IsOpen", open);
         if (open && Input.GetKeyDown(KeyCode.E)) {
@@ -33,6 +43,9 @@ public class DoorController : MonoBehaviour
             }
             else {
                 // Code to load the scene from sceneName string
+                DestroyPersistentObjects();
+                DestroyPersistentObjects();
+
                 UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
             }
         }
