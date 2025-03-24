@@ -14,13 +14,20 @@ public class JudgeController : MonoBehaviour
     private PlayerDialogue playerDialogue;
     string judgeInstructions;
     string judgePrompt;
+    string currentResponse;
     string currentSpeaker = "judgeContext";
     string currentContext = "judgeContext";
+    bool accusedResponded = false;
+    public DialogueBoxController dialogueBoxController;
+
     Dictionary<string, string> contextSpeakerMap = new Dictionary<string, string>();
     Dictionary<string, string> contextDialogueMap = new Dictionary<string, string>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // CLEAR FILE BEFORE ANYTHING
+        ClearFile();
+
         contextSpeakerMap["judgeContext"] = "You, the judge, said";
         contextSpeakerMap["accusedContext"] = "The accused person said";
         contextSpeakerMap["playerContext"] = "The player said";
@@ -29,15 +36,12 @@ public class JudgeController : MonoBehaviour
         contextDialogueMap["accusedContext"] = "character_accused";
         contextDialogueMap["playerContext"] = "character_player";
 
-
-        player = GameObject.Find("Player");
-
-        Debug.Log("Fetched the player dialogue...");
+        player = GameObject.Find("PlayerCourt");
         playerDialogue = player.GetComponent<PlayerDialogue>();
-        Debug.Log("Here it is: " + player.name);
 
-        DialogueController.instance.NewDialogueInstance("Give me a minute before I give my opening statement...", "character_judge");
+        dialogueBoxController.ShowDialogue("character_judge", "Give me a minute before I deliver my opening statement...");
         SetCurrentContext("judgeContext");
+
         // Judge should deliver opening statement upon entry into the court
         LoadJudgeInstructions(Instructions.JudgeStatement.DELIVER_OPENING_STATEMENT);
         StartCoroutine(ModelBridge.Bridge.ChatCompletion("https://api.deepseek.com",
@@ -50,7 +54,11 @@ public class JudgeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.P) && accusedResponded)
+        {
+            SendJudgeMessage(currentResponse);
+            accusedResponded = false;
+        }
     }
 
     public void SetCurrentContext(string context)
@@ -64,7 +72,7 @@ public class JudgeController : MonoBehaviour
     public void SendJudgeMessage(string message)
     {
         judgePrompt = message;
-        DialogueController.instance.NewDialogueInstance("Let me think...", "character_judge");
+        dialogueBoxController.ShowDialogue("character_judge", "Let me think...");
         StartCoroutine(ModelBridge.Bridge.ChatCompletion("https://api.deepseek.com",
                                                     judgeInstructions,
                                                     judgePrompt,
@@ -121,7 +129,16 @@ public class JudgeController : MonoBehaviour
             judgeInstructions = jsonObject["prototype"][judgementType].ToString();
             judgePrompt = jsonObject["prototype"][promptType].ToString() + $@"
                 Use the context below to aid your speech: 
-                {jsonObject["prototype"][contextType]}";    
+                {jsonObject["prototype"][contextType]}";
+
+            if (contextType == "judgeContext") {
+                judgePrompt += $@"If the prosecutor/the player mentions ANY of the following evidence, 
+                                    deliver a SWIFT, GUILTY VERDICT TO THE ACCUSED WITH NO MERCY: ";
+                foreach (var evidence in jsonObject["prototype"]["evidence"])
+                {
+                    judgePrompt += $@"{evidence}, ";
+                }
+            }   
         }
         else
         {
@@ -132,17 +149,8 @@ public class JudgeController : MonoBehaviour
     // Callback to dialogue processing
     void ProcessDialogue(string response)
     {
-        DialogueController.instance.NewDialogueInstance(response, contextDialogueMap[currentContext]);
+        dialogueBoxController.ShowDialogue(contextDialogueMap[currentContext], response);
         playerDialogue.EnableChat();
-        Debug.Log("enabling player chat"); 
-
-        // Make sure that if the accused is currently delivering speech, it is relayed to the judge.
-        if(currentContext == "accusedContext")
-        {
-            SetCurrentContext("judgeContext");
-            LoadJudgeInstructions(Instructions.JudgeStatement.CONVERSE_WITH_PLAYER);
-            SendJudgeMessage(response);
-        }
 
         // Open the judge_instructions.json file and prepare it for writing
         string filePath = Path.Combine(Application.dataPath, "Scripts/ModelInterface/judge_instructions.json");
@@ -152,7 +160,49 @@ public class JudgeController : MonoBehaviour
             {     
                 string jsonContent = File.ReadAllText(filePath);
                 JObject jsonObject = JObject.Parse(jsonContent);
-                jsonObject["prototype"][currentContext] += $@"\n{contextSpeakerMap[currentContext]} said: {response}, ";
+                jsonObject["prototype"]["judgeContext"] += $@"\n{contextSpeakerMap[currentContext]} said: {response}, ";
+                jsonObject["prototype"]["accusedContext"] += $@"\n{contextSpeakerMap[currentContext]} said: {response}, ";
+
+                string jsonFileContent = jsonObject.ToString();
+                using (StreamWriter writer = new StreamWriter(filePath, false))
+                {
+                    writer.Write(jsonFileContent);
+                }
+            }
+            catch (IOException ex)
+            {
+                Debug.LogError("Error opening judge_instructions.json for writing: " + ex.Message);
+            }
+        }
+        else
+        {
+            Debug.LogError("Judge instructions file not found.");
+        }
+
+        // Make sure that if the accused is currently delivering speech, it is relayed to the judge.
+        if(currentContext == "accusedContext")
+        {
+            SetCurrentContext("judgeContext");
+            LoadJudgeInstructions(Instructions.JudgeStatement.CONVERSE_WITH_PLAYER);
+            currentResponse = response;
+            accusedResponded = true;
+        }
+    }
+
+
+    // Init clear file
+    void ClearFile()
+    {
+        string filePath = Path.Combine(Application.dataPath, "Scripts/ModelInterface/judge_instructions.json");
+        if (File.Exists(filePath))
+        {
+            try
+            {     
+                string jsonContent = File.ReadAllText(filePath);
+                JObject jsonObject = JObject.Parse(jsonContent);
+                jsonObject["prototype"]["judgeContext"] = "";
+                jsonObject["prototype"]["accusedContext"] = "";
+                jsonObject["prototype"]["playerContext"] = "";
 
                 string jsonFileContent = jsonObject.ToString();
                 using (StreamWriter writer = new StreamWriter(filePath, false))

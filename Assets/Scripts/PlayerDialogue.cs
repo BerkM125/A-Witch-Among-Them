@@ -1,6 +1,10 @@
 using UnityEngine;
 using TMPro;
 using System;
+using System.Collections;
+using System.IO;
+using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
 
 public class PlayerDialogue : MonoBehaviour
 {
@@ -25,7 +29,33 @@ public class PlayerDialogue : MonoBehaviour
 
     // Send the message made by the player to Judge
     public void SendPlayerMessage(string message)
-    { 
+    {
+        // Open the judge_instructions.json file and prepare it for writing
+        string filePath = Path.Combine(Application.dataPath, "Scripts/ModelInterface/judge_instructions.json");
+        if (File.Exists(filePath))
+        {
+            try
+            {     
+                string jsonContent = File.ReadAllText(filePath);
+                JObject jsonObject = JObject.Parse(jsonContent);
+                jsonObject["prototype"]["judgeContext"] += $@"\nThe accuser, the player, just said: {message}, ";
+                jsonObject["prototype"]["accusedContext"] += $@"\nYour accuser, the player, just said: {message}, ";
+
+                string jsonFileContent = jsonObject.ToString();
+                using (StreamWriter writer = new StreamWriter(filePath, false))
+                {
+                    writer.Write(jsonFileContent);
+                }
+            }
+            catch (IOException ex)
+            {
+                Debug.LogError("Error opening judge_instructions.json for writing: " + ex.Message);
+            }
+        }
+        else
+        {
+            Debug.LogError("Judge instructions file not found.");
+        }
         judgeController.SendJudgeMessage(message);
     }
 
