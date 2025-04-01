@@ -16,15 +16,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
 
-        GameObject oldPlayer = GameObject.FindWithTag("Player");
-        if (oldPlayer != null)
-        {
-            Destroy(oldPlayer);
-        }
-
-        // Instantiate a new player for this scene
-        Instantiate(playerPrefab, new Vector3(5.01000023f,-0.699999988f,0f), Quaternion.identity);
-
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();

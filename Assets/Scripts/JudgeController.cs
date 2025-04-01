@@ -19,12 +19,16 @@ public class JudgeController : MonoBehaviour
     string currentContext = "judgeContext";
     bool accusedResponded = false;
     public DialogueBoxController dialogueBoxController;
+    public GameObject playerPrefab;
 
     Dictionary<string, string> contextSpeakerMap = new Dictionary<string, string>();
     Dictionary<string, string> contextDialogueMap = new Dictionary<string, string>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Instantiate(playerPrefab, new Vector3(5.01000023f,-0.699999988f,0f), Quaternion.identity);
+        Instantiate(playerPrefab, new Vector3(5.01000023f,-0.699999988f,0f), Quaternion.identity);
+
         // CLEAR FILE BEFORE ANYTHING
         ClearFile();
 
