@@ -18,6 +18,8 @@ public class JudgeController : MonoBehaviour
     string currentSpeaker = "judgeContext";
     string currentContext = "judgeContext";
     bool accusedResponded = false;
+    int interactionLimit = 2;
+    int interactionCount = 0;
     public DialogueBoxController dialogueBoxController;
 
     Dictionary<string, string> contextSpeakerMap = new Dictionary<string, string>();
@@ -92,8 +94,8 @@ public class JudgeController : MonoBehaviour
 
             switch (instructionType) {
                 case Instructions.JudgeStatement.DELIVER_JUDGMENT:
-                    judgementType = "judgmentInstructions";
-                    promptType = "judgmentPrompt";
+                    judgementType = "finalInstructions";
+                    promptType = "finalPrompt";
                     contextType = "judgeContext";
                     break;
                 case Instructions.JudgeStatement.DELIVER_OPENING_STATEMENT:
@@ -126,19 +128,23 @@ public class JudgeController : MonoBehaviour
             string jsonContent = File.ReadAllText(filePath);
             JObject jsonObject = JObject.Parse(jsonContent);
 
-            judgeInstructions = jsonObject["prototype"][judgementType].ToString();
+            judgeInstructions = "";
+            if (contextType == "judgeContext") {
+                interactionCount++;
+                judgeInstructions += $@"If the prosecutor/the player mentions ANY of the following evidence, 
+                                    deliver a SWIFT, GUILTY VERDICT TO THE ACCUSED WITH NO MERCY: ";
+                foreach (var evidence in jsonObject["prototype"]["evidence"])
+                {
+                    judgeInstructions += $@"{evidence}, ";
+                }
+            } 
+
+            judgeInstructions += jsonObject["prototype"][judgementType].ToString();
             judgePrompt = jsonObject["prototype"][promptType].ToString() + $@"
                 Use the context below to aid your speech: 
                 {jsonObject["prototype"][contextType]}";
 
-            if (contextType == "judgeContext") {
-                judgePrompt += $@"If the prosecutor/the player mentions ANY of the following evidence, 
-                                    deliver a SWIFT, GUILTY VERDICT TO THE ACCUSED WITH NO MERCY: ";
-                foreach (var evidence in jsonObject["prototype"]["evidence"])
-                {
-                    judgePrompt += $@"{evidence}, ";
-                }
-            }   
+  
         }
         else
         {
@@ -183,7 +189,12 @@ public class JudgeController : MonoBehaviour
         if(currentContext == "accusedContext")
         {
             SetCurrentContext("judgeContext");
-            LoadJudgeInstructions(Instructions.JudgeStatement.CONVERSE_WITH_PLAYER);
+            if(interactionCount == interactionLimit) {
+                LoadJudgeInstructions(Instructions.JudgeStatement.DELIVER_JUDGMENT);
+            }
+            else {
+                LoadJudgeInstructions(Instructions.JudgeStatement.CONVERSE_WITH_PLAYER);
+            }
             currentResponse = response;
             accusedResponded = true;
         }
