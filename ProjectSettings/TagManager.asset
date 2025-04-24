@@ -43,8 +43,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
+  - name: GroundL1
     uniqueID: 445630427
+    locked: 0
+  - name: GroundL2
+    uniqueID: 1134859917
+    locked: 0
+  - name: GroundL3
+    uniqueID: 2944371377
+    locked: 0
+  - name: GroundOverlap
+    uniqueID: 1983086771
     locked: 0
   - name: Foreground
     uniqueID: 1941091641
