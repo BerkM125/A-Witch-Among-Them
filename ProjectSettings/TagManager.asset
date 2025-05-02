@@ -67,5 +67,8 @@ TagManager:
   - name: People
     uniqueID: 2775112821
     locked: 0
+  - name: Roofs
+    uniqueID: 3242491511
+    locked: 0
   m_RenderingLayers:
   - Default
