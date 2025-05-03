@@ -26,3 +26,9 @@ MonoBehaviour:
     characterImage: {fileID: -2057538539, guid: f0db68bbac400af44992d7e4b9a65b95, type: 3}
     blips:
     - {fileID: 8300000, guid: 6859d58be09970142880a7ca11d86e6c, type: 3}
+  - characterName: YOU
+    characterId: character_player
+    description: Ken carson
+    characterImage: {fileID: 1662845497, guid: 607e52850429e124285d67c1e4b2f601, type: 3}
+    blips:
+    - {fileID: 8300000, guid: 6859d58be09970142880a7ca11d86e6c, type: 3}

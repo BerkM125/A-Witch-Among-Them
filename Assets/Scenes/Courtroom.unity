@@ -1240,7 +1240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c038a9370ea9ce14f8a23c3309cde91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionRadius: 2
   interactBox: {fileID: 66565190}
   dialogueBoxController: {fileID: 127262928}
 --- !u!95 &606910569
@@ -1349,7 +1348,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1519854475
-  m_SortingLayer: 5
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: -914683657, guid: 607e52850429e124285d67c1e4b2f601, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3026,7 +3025,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1519854475
-  m_SortingLayer: 5
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: -1773970547, guid: f0db68bbac400af44992d7e4b9a65b95, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3068,6 +3067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 606910563}
   dialogueBoxController: {fileID: 127262928}
+  playerPrefab: {fileID: 606910563}
 --- !u!1 &1427143073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3281,7 +3281,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1519854475
-  m_SortingLayer: 5
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 1753715529, guid: 920bf7a050e2d974d8cb5848609a8077, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
