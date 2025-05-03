@@ -14,7 +14,6 @@ public class PlayerIntro : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f; // Ensure no gravity affects the player
         StartCoroutine(MoveDown()); // Start the downward movement coroutine
-        StartCoroutine(OpeningSpeech()); // Start the opening speech coroutine
     }
 
     void Update()
@@ -22,9 +21,19 @@ public class PlayerIntro : MonoBehaviour
 
     }
 
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.name == "SteppingStone")
+        {
+            StartCoroutine(OpeningSpeech()); // Start the opening speech coroutine
+        }
+    }
+    
     IEnumerator OpeningSpeech()
     {
-        dialogueBoxController.ShowDialogue("character_player", "Hear me, people of New Athens! I am a witch hunter. My job is to expose witches in this time of great suffering and cure towns from suffering");
+        dialogueBoxController.ShowDialogue("character_player", @"Hear me, people of New Athens! I am a witch hunter.
+                                                                My job is to expose witches in this time of great suffering and cure towns
+                                                                from suffering");
         yield return new WaitForSeconds(2f); // Wait for 2 seconds before continuing
     }
     IEnumerator MoveDown()
