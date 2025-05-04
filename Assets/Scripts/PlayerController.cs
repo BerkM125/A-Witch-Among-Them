@@ -1,24 +1,33 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 10f;
     public float acceleration = 50f;
     public float deceleration = 50f;
+    public GameObject ObjectiveHandler;
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Vector2 currentVelocity;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+    private ObjectiveManager om;
+    public Image backdrop;
+
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        backdrop.color = new Color(0, 0, 0, 0);
+        // Objective handler initialization
+        om = ObjectiveHandler.GetComponent<ObjectiveManager>();
+        om.ProgressObjective();
 
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        // Get references to components
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        animator = gameObject.GetComponent<Animator>();
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         // Ensure the Rigidbody2D is set up for top-down movement
         rb.gravityScale = 0f;
         rb.linearDamping = 1f;

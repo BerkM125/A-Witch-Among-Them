@@ -7,9 +7,12 @@ public class ClueCollector : MonoBehaviour
 {
     public GameObject interactBox;
     bool clueInRange = false;
+    public GameObject objectiveHandler;
+    private ObjectiveManager om;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        om = objectiveHandler.GetComponent<ObjectiveManager>();
         string filePath = Path.Combine(Application.dataPath, "Scripts/ModelInterface/judge_instructions.json");
         if (File.Exists(filePath))
         {
@@ -49,6 +52,11 @@ public class ClueCollector : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            if(!om.objectives[5].fulfilled)
+            {
+                om.ProgressObjective();
+            }
+
             interactBox.SetActive(true);
             clueInRange = true;
         }

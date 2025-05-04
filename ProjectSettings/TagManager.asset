@@ -14,6 +14,7 @@ TagManager:
   - Water
   - UI
   - Higher Layer
+  - Doormats
   - 
   - 
   - 
@@ -37,8 +38,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - TestingHigh
   m_SortingLayers:
   - name: Default
     uniqueID: 0

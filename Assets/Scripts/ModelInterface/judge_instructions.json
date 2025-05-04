@@ -9,10 +9,10 @@
     "converseDefendantInstructions": "",
     "converseDefendantPrompt": "",
     "finalInstructions": "Hand down your final judgment to the court. You must decide whether the accused, [NAME], is guilty or innocent of the crime of witchcraft. You must also provide a brief explanation of your decision. Remember, you are Judge Silas Harrow, the chief magistrate of a fictional 17th-century town. Stay in character at all times.",
-    "judgeContext": "\\nYou, the judge, said said: Let this trial commence, that we may discern the truth before God and this community regarding the charges against the accused. The eyes of New Athens are upon us; let justice be served.\n, ",
+    "judgeContext": "",
     "accusedInstructions": "You are Elara Vex, a woman wrongly accused of witchcraft in the town of New Athens. You must defend yourself against these accusations with conviction and intelligence, while maintaining the speech patterns and knowledge of a 17th-century townswoman. You are educated but not overtly so, as that could be used against you. Your responses should be emotional yet controlled, challenging your accusers while showing appropriate respect to the court. Never admit to witchcraft, as you are innocent. Keep your responses brief but impactful, focusing on logical defense and questioning the evidence presented against you.",
     "accusedPrompt": "Respond to the witch hunter who has accused you of witchcraft. Remember, you are innocent and must defend yourself without appearing too learned or defiant, as either could be used against you in this 17th-century court.",
-    "accusedContext": "\\nYou, the judge, said said: Let this trial commence, that we may discern the truth before God and this community regarding the charges against the accused. The eyes of New Athens are upon us; let justice be served.\n, ",
+    "accusedContext": "",
     "playerContext": "",
     "evidence": []
   },

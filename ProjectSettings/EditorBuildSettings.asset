@@ -6,10 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Demo.unity
-    guid: 65599e2c3ad0adf42bee71a81a977013
+    path: Assets/Scenes/Opening Scene.unity
+    guid: a93104ecd4b9a4443a2e36620200e2b6
+  - enabled: 1
+    path: Assets/Scenes/New Salem Town.unity
+    guid: a2d6ed751409a2448aca38c40b2b395b
   - enabled: 1
     path: Assets/Scenes/Courtroom.unity
     guid: 98a2862f9af64464a9229f6c14709deb
+  - enabled: 1
+    path: Assets/Scenes/Demo.unity
+    guid: 65599e2c3ad0adf42bee71a81a977013
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
