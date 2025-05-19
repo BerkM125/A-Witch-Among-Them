@@ -43,7 +43,7 @@ public class TalkInteraction : MonoBehaviour
             canInteract = true;
 
             // Do this manually, putting in update is inefficient and causes errors.
-            interactBox.SetActive(canInteract);
+            // interactBox.SetActive(canInteract);
 
             // Make the NPC face the player
             Vector3 direction = transform.position - nearestNPC.transform.position;
@@ -60,7 +60,7 @@ public class TalkInteraction : MonoBehaviour
             canInteract = false;
 
             // Do this manually, putting in update is inefficient and causes errors.
-            interactBox.SetActive(canInteract);
+            // interactBox.SetActive(canInteract);
         }
     }
 }
