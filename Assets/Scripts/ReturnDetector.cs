@@ -31,7 +31,7 @@ public class ReturnDetector : MonoBehaviour
             // Progress the objective
             om.ProgressObjective();
             // Show dialogue
-            dialogueBox.ShowDialogue("character_player", "Time to go to 'sleep'... heheheheh.");
+            // dialogueBox.ShowDialogue("character_player", "Time to go to 'sleep'... heheheheh.");
 
             // Night time sky
             StartCoroutine(backdrop.GetComponent<BackdropScript>().FadeToNightTime());
@@ -47,7 +47,7 @@ public class ReturnDetector : MonoBehaviour
             // Progress the objective
             om.ProgressObjective();
             // Show dialogue
-            dialogueBox.ShowDialogue("character_player", "Better prepare for a great day of WITCHING tomorrow!");
+            // dialogueBox.ShowDialogue("character_player", "Better prepare for a great day of WITCHING tomorrow!");
 
             // Day time sky
             StartCoroutine(backdrop.GetComponent<BackdropScript>().FadeToDayTime());

@@ -30,7 +30,7 @@ public class TalkInteraction : MonoBehaviour
             // TODO: Implement NPC interaction logic here
             Debug.Log("Interacting with NPC!");
             // DialogueController.instance.NewDialogueInstance("Hello there!", "character_nun");
-            dialogueBoxController.ShowDialogue("character_accused", "Why hello there! You must be the new witch hunter in town!");
+            // dialogueBoxController.ShowDialogue("character_accused", "Why hello there! You must be the new witch hunter in town!");
             canInteract = false;
         }
     }

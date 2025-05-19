@@ -31,7 +31,7 @@ public class OutsideDetector : MonoBehaviour
             backdrop.color = new Color(0.3886792f, 0.1338908f, 0.05500172f, 0.4f);
 
             // Show dialogue
-            dialogueBox.ShowDialogue("character_player", "I should head home... it's getting quite late.");
+            // dialogueBox.ShowDialogue("character_player", "I should head home... it's getting quite late.");
             
         }
 
@@ -41,7 +41,7 @@ public class OutsideDetector : MonoBehaviour
             om.ProgressObjective();
 
             // Show dialogue
-            dialogueBox.ShowDialogue("character_player", "Better head home before the sun comes up!");
+            // dialogueBox.ShowDialogue("character_player", "Better head home before the sun comes up!");
             
         }
     }

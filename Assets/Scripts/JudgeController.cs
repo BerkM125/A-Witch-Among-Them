@@ -45,7 +45,7 @@ public class JudgeController : MonoBehaviour
         player = GameObject.Find("PlayerCourt");
         playerDialogue = player.GetComponent<PlayerDialogue>();
 
-        dialogueBoxController.ShowDialogue("character_judge", "Give me a minute before I deliver my opening statement...");
+        // dialogueBoxController.ShowDialogue("character_judge", "Give me a minute before I deliver my opening statement...");
         SetCurrentContext("judgeContext");
 
         // Judge should deliver opening statement upon entry into the court
@@ -78,7 +78,7 @@ public class JudgeController : MonoBehaviour
     public void SendJudgeMessage(string message)
     {
         judgePrompt = message;
-        dialogueBoxController.ShowDialogue("character_judge", "Let me think...");
+        // dialogueBoxController.ShowDialogue("character_judge", "Let me think...");
         StartCoroutine(ModelBridge.Bridge.ChatCompletion("https://api.deepseek.com",
                                                     judgeInstructions,
                                                     judgePrompt,
