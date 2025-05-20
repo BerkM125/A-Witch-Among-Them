@@ -159,7 +159,7 @@ public class JudgeController : MonoBehaviour
     // Callback to dialogue processing
     void ProcessDialogue(string response)
     {
-        dialogueBoxController.ShowDialogue(contextDialogueMap[currentContext], response);
+        // dialogueBoxController.ShowDialogue(contextDialogueMap[currentContext], response);
         playerDialogue.EnableChat();
 
         // Open the judge_instructions.json file and prepare it for writing

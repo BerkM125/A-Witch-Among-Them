@@ -39,10 +39,10 @@ public class ElaraConversation : MonoBehaviour
             dialogueBox.AddDialogue("character_accused", "Stuff like KNITTING POPPETS, SWEEPING THE FLOOR WITH A BROOM, and even... uh... you know what? Never mind that last one. It's a little too personal.");
             dialogueBox.AddDialogue("character_accused", "Ah screw it. I've been reading more! Yes I know that's taboo here... but THIS BOOK IS VERY INTERESTING... trust me.");
             dialogueBox.AddDialogue("character_accused", "I think it has something to do with the WITCHES in this town. Hey, you said you're hunting them? Good luck with that good sir!");
-            dialogueBox.AddDialogue("character_player", "Thanks Elara! I'll be looking carefully... you've been such a great friend so far.");
+            // dialogueBox.AddDialogue("character_player", "Thanks Elara! I'll be looking carefully... you've been such a great friend so far.");
 
             dialogueBox.ShowDialogue("character_accused");
-            dialogueBox.ShowDialogue("character_player");
+            // dialogueBox.ShowDialogue("character_player");
 
             om.ProgressObjective();
 
