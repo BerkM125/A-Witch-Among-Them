@@ -107,22 +107,32 @@ public class DialogueBoxController : MonoBehaviour
         }
     }
 
-    public void AddDialogue(string character_id, string message) {
+
+    public void AddDialogue(string character_id, string message)
+    {
         if (characterData.characters.Length != characters.Keys.Count)
         {
             characters = new Dictionary<string, CharacterData.Character>();
-            foreach (CharacterData.Character character in characterData.characters) {
+            foreach (CharacterData.Character character in characterData.characters)
+            {
                 characters.Add(character.characterId, character);
             }
         }
 
         // Initialize dictionary if not already initialized (but should normally be done once in Awake())
-        if (dialogues == null) {
+        if (dialogues == null)
+        {
             dialogues = new Queue<Tuple<string, string>>();
         }
 
         // Enqueue the new message for the character
         dialogues.Enqueue(new Tuple<string, string>(character_id, message));
     }
-
+    public void AddDialogue(string character_id, params string[] messages)
+    {
+        foreach (string message in messages)
+        {
+            AddDialogue(character_id, message);
+        }
+    }
 }
