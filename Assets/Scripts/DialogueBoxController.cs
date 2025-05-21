@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class DialogueBoxController : MonoBehaviour
 {
@@ -16,20 +17,23 @@ public class DialogueBoxController : MonoBehaviour
     private bool mouseDown = false;
     private bool textDone = false;
 
-    private Dictionary<string, Queue> dialogues;
-    void Awake() {
-        dialogues = new Dictionary<string, Queue>();
-        Debug.Log("Awake called, dialogues initialized");
-    }
+    // private Dictionary<string, Queue> dialogues;
+    private Queue<Tuple<string, string>> dialogues;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private Dictionary<string, CharacterData.Character> characters;
+    
+    public DialogueBoxController()
     {
         // SetActive(false); // Ensure the dialogue box is hidden initially
+        characters = new Dictionary<string, CharacterData.Character>();
+    }
+
+    void Awake()
+    {
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         // Optional: Add input handling here if needed
         if (Input.GetMouseButtonDown(0)) {
             mouseDown = true;
@@ -46,27 +50,15 @@ public class DialogueBoxController : MonoBehaviour
         nameText.text = name;
     }
 
-    private IEnumerator SetDialogue(string character_id)
+    public IEnumerator ShowDialogue()
     {
-        if (!dialogues.ContainsKey(character_id))
-        {
-            Debug.Log("Current dialogues keys: " + string.Join(", ", dialogues.Keys)); 
-            Debug.LogError($"Key '{character_id}' not found in dictionary!");
-            yield break; // Exit the method early if the key doesn't exist
-        }
- 
-        
-        // if (typingCoroutine != null) {
-        //     StopCoroutine(typingCoroutine);
-        // }
-
-        var queue = dialogues[character_id];
         textDone = false;
 
-        while (queue.Count > 0)
+        while (dialogues.Count > 0)
         {
-            string message = (string) queue.Dequeue();
-            yield return typingCoroutine = StartCoroutine(TypeDialogue(message));
+            Tuple<string, string> message = dialogues.Dequeue();
+            SetActive(true, message.Item1);
+            yield return typingCoroutine = StartCoroutine(TypeDialogue(message.Item2));
             yield return new WaitUntil(() => mouseDown);  // Wait for user click to continue
             mouseDown = false;
         }
@@ -85,13 +77,13 @@ public class DialogueBoxController : MonoBehaviour
         // gameObject.SetActive(true);
     }
 
-    private void SetActive(bool active, string character_id, string name, Sprite portrait)
-    {
+    private void SetActive(bool active, string character_id) {
+        CharacterData.Character c = characters[character_id];
         SetActive(active);
-        SetName(name);
-        SetPortrait(portrait);
+        SetName(c.characterName);
+        SetPortrait(c.characterImage);
         // SetDialogue(character_id);
-        StartCoroutine(SetDialogue(character_id)); // <-- Coroutine!
+        // StartCoroutine(SetDialogue(character_id)); // <-- Coroutine!
     }
 
     private IEnumerator TypeDialogue(string message) {
@@ -116,37 +108,21 @@ public class DialogueBoxController : MonoBehaviour
     }
 
     public void AddDialogue(string character_id, string message) {
-       Debug.Log(character_id + ": " + message);
-
-        // Initialize dictionary if not already initialized (but should normally be done once in Awake())
-        if (dialogues == null)
+        if (characterData.characters.Length != characters.Keys.Count)
         {
-            dialogues = new Dictionary<string, Queue>();
+            characters = new Dictionary<string, CharacterData.Character>();
+            foreach (CharacterData.Character character in characterData.characters) {
+                characters.Add(character.characterId, character);
+            }
         }
 
-        // If the character doesn't have an entry in the dictionary, create one
-        if (!dialogues.ContainsKey(character_id))
-        {
-            Debug.Log("Adding new queue for character: " + character_id);
-            dialogues.Add(character_id, new Queue());
+        // Initialize dictionary if not already initialized (but should normally be done once in Awake())
+        if (dialogues == null) {
+            dialogues = new Queue<Tuple<string, string>>();
         }
 
         // Enqueue the new message for the character
-        dialogues[character_id].Enqueue(message);
-
-        // Debug the current keys in the dictionary
-        Debug.Log("Current dialogues keys: " + string.Join(", ", dialogues.Keys)); 
+        dialogues.Enqueue(new Tuple<string, string>(character_id, message));
     }
 
-    public void ShowDialogue(string character_id) {
-        Debug.Log("Showing dialogue for character: " + character_id);
-        foreach (CharacterData.Character character in characterData.characters) {
-            if (character.characterId == character_id) {
-                Debug.Log("hit character " + character_id);
-                SetActive(true, character_id, character.characterName, character.characterImage);
-                return;
-            }
-        }
-        Debug.LogError("Unknown character " + character_id);
-    }
 }
