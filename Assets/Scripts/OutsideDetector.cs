@@ -30,8 +30,10 @@ public class OutsideDetector : MonoBehaviour
             // Hazen the sky
             backdrop.color = new Color(0.3886792f, 0.1338908f, 0.05500172f, 0.4f);
 
+            Debug.Log("Should be heading home...");
             // Show dialogue
-            // dialogueBox.ShowDialogue("character_player", "I should head home... it's getting quite late.");
+            dialogueBox.AddDialogue("character_player", "I should head home... it's getting quite late.");
+            StartCoroutine(dialogueBox.ShowDialogue()); // Show the dialogue and change scene
             
         }
 
@@ -41,8 +43,8 @@ public class OutsideDetector : MonoBehaviour
             om.ProgressObjective();
 
             // Show dialogue
-            // dialogueBox.ShowDialogue("character_player", "Better head home before the sun comes up!");
-            
+            dialogueBox.AddDialogue("character_player", "Better head home before the sun comes up!");
+            StartCoroutine(dialogueBox.ShowDialogue()); // Show the dialogue and change scene
         }
     }
 }

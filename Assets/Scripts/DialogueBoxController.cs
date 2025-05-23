@@ -66,6 +66,23 @@ public class DialogueBoxController : MonoBehaviour
         textDone = true;
     }
 
+    public IEnumerator ShowDialogueExtended(Action<string> endingMethod)
+    {
+        textDone = false;
+
+        while (dialogues.Count > 0)
+        {
+            Tuple<string, string> message = dialogues.Dequeue();
+            SetActive(true, message.Item1);
+            yield return typingCoroutine = StartCoroutine(TypeDialogue(message.Item2));
+            yield return new WaitUntil(() => mouseDown);  // Wait for user click to continue
+            mouseDown = false;
+        }
+
+        textDone = true;
+        endingMethod?.Invoke("Dialogue ended");
+    }
+
     private void SetPortrait(Sprite portrait)
     {
         portraitImage.sprite = portrait;

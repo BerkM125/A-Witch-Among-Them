@@ -45,7 +45,9 @@ public class JudgeController : MonoBehaviour
         player = GameObject.Find("PlayerCourt");
         playerDialogue = player.GetComponent<PlayerDialogue>();
 
-        // dialogueBoxController.ShowDialogue("character_judge", "Give me a minute before I deliver my opening statement...");
+        dialogueBoxController.AddDialogue("character_judge", "Give me a minute before I deliver my opening statement...");
+        StartCoroutine(dialogueBoxController.ShowDialogue());
+
         SetCurrentContext("judgeContext");
 
         // Judge should deliver opening statement upon entry into the court
@@ -78,7 +80,9 @@ public class JudgeController : MonoBehaviour
     public void SendJudgeMessage(string message)
     {
         judgePrompt = message;
-        // dialogueBoxController.ShowDialogue("character_judge", "Let me think...");
+        dialogueBoxController.AddDialogue("character_judge", "Let me think...");
+        StartCoroutine(dialogueBoxController.ShowDialogue());
+
         StartCoroutine(ModelBridge.Bridge.ChatCompletion("https://api.deepseek.com",
                                                     judgeInstructions,
                                                     judgePrompt,
@@ -99,7 +103,7 @@ public class JudgeController : MonoBehaviour
             switch (instructionType) {
                 case Instructions.JudgeStatement.DELIVER_JUDGMENT:
                     judgementType = "finalInstructions";
-                    promptType = "finalPrompt";
+                    promptType = "judgmentPrompt";
                     contextType = "judgeContext";
                     break;
                 case Instructions.JudgeStatement.DELIVER_OPENING_STATEMENT:
@@ -109,7 +113,7 @@ public class JudgeController : MonoBehaviour
                     break;
                 case Instructions.JudgeStatement.DELIVER_FINAL_INSTRUCTIONS:
                     judgementType = "finalInstructions";
-                    promptType = "finalPrompt";
+                    promptType = "judgmentPrompt";
                     contextType = "judgeContext";
                     break;
                 case Instructions.JudgeStatement.DELIVER_AS_DEFENDANT:
@@ -144,11 +148,10 @@ public class JudgeController : MonoBehaviour
             } 
 
             judgeInstructions += jsonObject["prototype"][judgementType].ToString();
+            Debug.Log("Prompt Type: " + promptType);
             judgePrompt = jsonObject["prototype"][promptType].ToString() + $@"
                 Use the context below to aid your speech: 
                 {jsonObject["prototype"][contextType]}";
-
-  
         }
         else
         {
@@ -159,7 +162,8 @@ public class JudgeController : MonoBehaviour
     // Callback to dialogue processing
     void ProcessDialogue(string response)
     {
-        // dialogueBoxController.ShowDialogue(contextDialogueMap[currentContext], response);
+        dialogueBoxController.AddDialogue(contextDialogueMap[currentContext], response);
+        StartCoroutine(dialogueBoxController.ShowDialogue());
         playerDialogue.EnableChat();
 
         // Open the judge_instructions.json file and prepare it for writing

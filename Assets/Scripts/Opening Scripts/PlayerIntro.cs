@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
+using System;
+
 public class PlayerIntro : MonoBehaviour
 {
     public float speed; // Slow speed for downward movement
@@ -33,42 +36,27 @@ public class PlayerIntro : MonoBehaviour
             StartCoroutine(OpeningSpeech()); // Start the opening speech coroutine
         }
     }
-    
+
     IEnumerator OpeningSpeech()
-    {   
-        // // Initiate throwing animation
-        // animator.SetBool("IsThrowing", true);
+    {
+        // Initiate throwing animation
+        animator.SetBool("IsThrowing", true);
         yield return new WaitForSeconds(4f);
-        // animator.SetBool("IsThrowing", false); 
+        animator.SetBool("IsThrowing", false);
 
         // // Reveal the witch, drop them
-        // witchCorpse.transform.position = gameObject.transform.position + witchOffset;
-        // witchCorpse.SetActive(true);
-        // yield return new WaitForSeconds(2f); // Wait for 2 seconds before continuing
+        witchCorpse.transform.position = gameObject.transform.position + witchOffset;
+        witchCorpse.SetActive(true);
+        yield return new WaitForSeconds(2f); // Wait for 2 seconds before continuing
 
         // // Begin monologue
-        // dialogueBoxController.ShowDialogue("character_player", "Hear me, people of New Athens! I am a witch hunter.");
-        // yield return new WaitForSeconds(5f); // Wait for 2 seconds before continuing
-
-        // dialogueBoxController.ShowDialogue("character_accused", "Traveler... who is that blond haired lady you have just dropped into our town square?");
-        // yield return new WaitForSeconds(6f); // Wait for 2 seconds before continuing
-
-        // dialogueBoxController.ShowDialogue("character_player", "From the last town I came from... this is a real witch.");
-        // yield return new WaitForSeconds(3f); // Wait for 2 seconds before continuing
-        
-        // dialogueBoxController.ShowDialogue("character_accused", "A witch? You mean to say that this lady is a witch? Good lord...");
-        // yield return new WaitForSeconds(6f); // Wait for 2 seconds before continuing
-        
-        // dialogueBoxController.ShowDialogue("character_player", "Indeed. People of New Athens, I am a witch hunter. My job is to root out the witches that plague our towns and cure our people from suffering!");
-        // yield return new WaitForSeconds(7f); // Wait for 2 seconds before continuing
-        
-        // dialogueBoxController.ShowDialogue("character_accused", "Welcome witch hunter! We hope to learn a lot from your ways.");
-        // yield return new WaitForSeconds(3f); // Wait for 2 seconds before continuing
-    
-        // // Fade out the backdrop
-        // gameObject.GetComponent<PlayerController>().enabled = true;
-        
-        // StartCoroutine(backdrop.GetComponent<BackdropScript>().FadeToNewScene());    
+        dialogueBoxController.AddDialogue("character_player", "Hear me, people of New Athens! I am a witch hunter.");
+        dialogueBoxController.AddDialogue("character_accused", "Traveler... who is that blond haired lady you have just dropped into our town square?");
+        dialogueBoxController.AddDialogue("character_player", "From the last town I came from... this is a real witch.");
+        dialogueBoxController.AddDialogue("character_accused", "A witch? You mean to say that this lady is a witch? Good lord...");
+        dialogueBoxController.AddDialogue("character_player", "Indeed. People of New Athens, I am a witch hunter. My job is to root out the witches that plague our towns and cure our people from suffering!");
+        dialogueBoxController.AddDialogue("character_accused", "Welcome witch hunter! We hope to learn a lot from your ways.");
+        StartCoroutine(dialogueBoxController.ShowDialogueExtended(_ => ChangeSceneFromPlayer("myScene"))); // Show the dialogue and change scene
     }
 
     IEnumerator MoveDown()
@@ -80,5 +68,11 @@ public class PlayerIntro : MonoBehaviour
             rb.MovePosition(rb.position + Vector2.down * speed * Time.deltaTime);
             yield return null;
         }
+    }
+
+    public void ChangeSceneFromPlayer(string reception)
+    {
+        Debug.Log("Received? " + reception);
+        StartCoroutine(backdrop.GetComponent<BackdropScript>().FadeToNewScene());   
     }
 }
