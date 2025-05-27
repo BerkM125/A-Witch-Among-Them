@@ -194,13 +194,15 @@ public class JudgeController : MonoBehaviour
         }
 
         // Make sure that if the accused is currently delivering speech, it is relayed to the judge.
-        if(currentContext == "accusedContext")
+        if (currentContext == "accusedContext")
         {
             SetCurrentContext("judgeContext");
-            if(interactionCount == interactionLimit) {
+            if (interactionCount == interactionLimit)
+            {
                 LoadJudgeInstructions(Instructions.JudgeStatement.DELIVER_JUDGMENT);
             }
-            else {
+            else
+            {
                 LoadJudgeInstructions(Instructions.JudgeStatement.CONVERSE_WITH_PLAYER);
             }
             currentResponse = response;
