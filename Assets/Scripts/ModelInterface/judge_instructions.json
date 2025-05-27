@@ -14,11 +14,7 @@
     "accusedPrompt": "Respond to the witch hunter who has accused you of witchcraft. Remember, you are innocent and must defend yourself without appearing too learned or defiant, as either could be used against you in this 17th-century court.",
     "accusedContext": "\\nYou, the judge, said said: Let the trial of Elara Vex commence, before God and this assembly. May truth prevail, and justice be served upon the accused.\n, \\nYour accuser, the player, just said: Elena Vex is a witch and I can prove it! I have evidence of her creating witchy poppets, her magic broom, and she has a book of satanic writings!, \\nThe accused person said said: I stand before this court, a woman wrongly accused. These claims against me are naught but fanciful imaginings, twisted by fear and misunderstanding.\n\nFirstly, these \"poppets\" are mere dolls, playthings crafted for the children of this very town. Are we to condemn every mother who sews a toy for her child as a servant of the Devil?\n\nAs for this \"magic broom,\" it is a household implement, used for sweeping floors and keeping a clean home. To suggest it possesses dark powers is absurd.\n\nAnd this \"book of satanic writings?\" I daresay it is but a collection of herbal remedies and folklore, passed down through generations. Knowledge, not evil, is found within its pages.\n, \\nYou, the judge, said said: The evidence presented before this court is damning. The accused, Elara Vex, stands convicted of consorting with dark forces. The possession of a Satanic Book, a Creepy Poppet, and a Flying Broom are undeniable signs of witchcraft. \n\nThe court finds you guilty. May God have mercy on your soul.\n, ",
     "playerContext": "",
-    "evidence": [
-      "Elara Vex owns a Satanic Book...",
-      "Elara Vex owns a Creepy Poppet...",
-      "Elara Vex owns a Flying Broom..."
-    ]
+    "evidence": []
   },
   "weekOne": {}
 }
