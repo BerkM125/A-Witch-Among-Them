@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private ObjectiveManager om;
     public Image backdrop;
+    public bool playerLocked = false;
 
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -37,14 +38,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Get input from WASD or arrow keys
-        moveInput.x = Input.GetAxisRaw("Horizontal");
-        moveInput.y = Input.GetAxisRaw("Vertical");
-        
-        // Normalize diagonal movement
-        if (moveInput.magnitude > 1f)
+        if (!playerLocked)
         {
-            moveInput.Normalize();
+            // Get input from WASD or arrow keys
+            moveInput.x = Input.GetAxisRaw("Horizontal");
+            moveInput.y = Input.GetAxisRaw("Vertical");
+            
+            // Normalize diagonal movement
+            if (moveInput.magnitude > 1f)
+            {
+                moveInput.Normalize();
+            }
         }
     }
 

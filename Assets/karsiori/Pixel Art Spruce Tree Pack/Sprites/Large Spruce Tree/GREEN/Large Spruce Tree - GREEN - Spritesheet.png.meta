@@ -1,0 +1,4790 @@
+fileFormatVersion: 2
+guid: 3d5fddef11e2f7342b08b7bb6fed3686
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271349
+  packageName: Pixel Art Spruce Tree Pack - Animated
+  packageVersion: 1.1
+  assetPath: Assets/karsiori/Pixel Art Spruce Tree Pack/Sprites/Large Spruce Tree/GREEN/Large
+    Spruce Tree - GREEN - Spritesheet.png
+  uploadId: 670279
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ff06fbb9a95f94084d35851c987665
+      internalID: -121936342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b968817b905f17142baf39ea8b16305b
+      internalID: 1162453572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a587e1c00f1c1b478e405f015e7c350
+      internalID: 1506680076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f44ee2e717a584187cbcca9e443d04
+      internalID: 378992331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67c999066444ec4684fee27bfdf7b1f
+      internalID: -1831277327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e8270c0fb94eb48ab797bf5d636131
+      internalID: -2018476186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8e1b540d4f2524baef1dcd4988cdb8
+      internalID: -1527474147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1ea3dcfc8572d4086e315a4e3b587e
+      internalID: 1322276608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6583d92bbdf0404eb2028ae37b2f677
+      internalID: -953479432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7c1d330d47ef04298ece884bd25bef
+      internalID: -640988875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccf99f2f0ae7ae43a6d0c58cb37552c
+      internalID: 200180470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7fc0a25c5154ee4db294560b39bfda6
+      internalID: 1813731063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4bd67e6b2217f428f57523d8f8cad1
+      internalID: 868710713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43074c721e0d4d1438afc328da91aaf2
+      internalID: -672903369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5042f540c46f441b6127c753cdabc8
+      internalID: 1461938080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2814c0b8b1e9653409dabacf6900fd4e
+      internalID: -1602982673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db669dab1e3b2d49800daaf0f3c6b71
+      internalID: -799587742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b636cd8543a01aa438ac880a31500cb4
+      internalID: 470466431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c941de6124acd40907ed4e222e008b
+      internalID: -452214216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21344370b019ec1458db5135b80a32f7
+      internalID: -718268477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4316574e23ca143a0a67fae2aa3865
+      internalID: -2134302125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dc13d9c01bb6341897e8e605a4e829
+      internalID: -878075424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b16f27fa38cb8488ca45d064fd584b
+      internalID: 1511059995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e802650f25ebf1a43b1528adc78a1da6
+      internalID: 718503559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c1bc13697f1bc43bdde2b72440314f
+      internalID: 644756824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385658df2e60e524c9964f663711af0b
+      internalID: 1264242570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7dc55ae9ac07d4c9a1a9a7bf31416b
+      internalID: -829181625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51bae1f316afc34f848f540732e78fb
+      internalID: -779529103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1259126f499d4134b8fb44e8a0f8c511
+      internalID: 963788188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecb459c2f9a3d94ca78fd1b739cca47
+      internalID: -490566926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64bd8ae38de574448ac0022f2e730cc4
+      internalID: 1463040156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa4ed6befb15744bbca257f09b49acf
+      internalID: 1702712402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d752333163cfe4cadb9bd2eb42e18b
+      internalID: 71399018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144372b412b47af46845058b796b4630
+      internalID: -989066331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d042d6f97a03c474eb0560fc3f081850
+      internalID: 1826031131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15830052e5f11cc4db2654780f5f03da
+      internalID: 420956642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d254e797590090a449a60f253030e71b
+      internalID: -1212786725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a573385ff565b4540935e65bd39ed9f5
+      internalID: 1746942104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb2e5ec859effa4383f1fa706291aba
+      internalID: -1580739282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643e0bcb99e115544a61238a7446f865
+      internalID: -1392415484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c502da3c80912144198af7aacf576067
+      internalID: -2119931011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741a9d7def425544c819c31031642381
+      internalID: 260383066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d73728d4799a604ba7f38d0aa34fb61
+      internalID: -869950222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ed349e2b1abe04182790426a2f88b7
+      internalID: 1234617809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a1f2438233b8e4d8aadb1a08d766e4
+      internalID: 2131176108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf78f7215a6557499b248fb4a6fd812
+      internalID: -1220478418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d50fc03d9748704a9567bc2f000ecdd
+      internalID: 2022184860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d839efa72b53720439908f6e1ad8e05e
+      internalID: -904981379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3dff67fc4e51c4f807911fd84517e3
+      internalID: 641188590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 96
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70bf63f10f1ce764888de4fc508934bf
+      internalID: -1821237634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe854ba4e429c34d87bd3c6e50cefcd
+      internalID: 1163281590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296dad3c74a2c024f8c4aa396288499b
+      internalID: 1221448616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de3b6f62521a344a8510372d01d208b
+      internalID: -1576027656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682cba7bc4383a64484c421a2a94cba4
+      internalID: 1814386724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6003990d37854b4eb865b43fb021353
+      internalID: 87513398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c054f9278cdce40a668be426f4e425
+      internalID: -654920538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fb4a63d260b51489cce24963a6d9ed
+      internalID: -103390711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30720df91aa1c3546869a8618fd63327
+      internalID: 1692348368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a79d88b41e0f147b74ca20b0ee8b4f
+      internalID: 1261882208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ef06a352361d0439e4145a15d95a8a
+      internalID: -163421451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1d37f629b795f43849342eef641744
+      internalID: 993963358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a90ff764296aa24c84bfa3c1fbc8f8d
+      internalID: -1446975491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda3e6e21afc89a46b3025ee58bed551
+      internalID: 378376393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30ad645f92e04a42803109f1962c74c
+      internalID: 461734186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8e8125e34133449bfa9c4d4b5ee621
+      internalID: 868483255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0797c6cc4580c146b736524f3215690
+      internalID: -2026656050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b34374b798913147b74b99049cddd12
+      internalID: -211924050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a68e583dd122c4c9702cc80cfdc1c3
+      internalID: 30858659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325f261fed43d0b4b9c0155c88555c84
+      internalID: -344197682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05485d45322898949940f68df01fdfef
+      internalID: 1465705529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3120fb41ee542c47b8ac0efa9b1c47c
+      internalID: -971780615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606e717d42464b94099836876b267ae7
+      internalID: -1220099076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8c23f01ccf5d148b6f9289b02becd7
+      internalID: -190566769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b33ff3089bd5b74da01de00e3012d48
+      internalID: 211010871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301d1d7c31d762e4f8b59022c181cc07
+      internalID: 1535105331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704f33f4c9fe133449e4fca570a7768a
+      internalID: -1901497148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45094bcc4fc135b4b95fc2db41497d8c
+      internalID: -1591121669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910db5d3d779cc948ac84f47aa29bf94
+      internalID: -95285094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59c700ad3ee4c1408753eab6b36bfe5
+      internalID: 639371697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0073e521be0b7d04f8642de7720ca229
+      internalID: 80356423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603493341d1074a4880c9527bf13de25
+      internalID: 900968740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a720d63868d3e4da952eef1ae8a89f
+      internalID: -1050579267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0c0ca9c7ea2934986705165c4dfe81
+      internalID: 1644771707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f9915a5b2b74c428f2c3b9b9b2f94e
+      internalID: 387296729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d768d5fab4f99984cbe61e36adfc58a5
+      internalID: 1723578372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ad3b1a03991c741a89929bdcf47f9b
+      internalID: -669571169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479113375f6ccb34c8a705b1188b7633
+      internalID: -80736612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b585589c1fba64246a6f31187b71285d
+      internalID: 275356231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72aa10d4bf3980342a146306987dcc4b
+      internalID: -451404493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c832390c2adb78b40974313dc473fd4d
+      internalID: 444497138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59919a59962dda84595f98fa602ff5a9
+      internalID: 67951023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f238d7adb67ad7649a3cdc2575d8c359
+      internalID: -1721088870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7507a2896e926a44893de7f262dbf802
+      internalID: -804992165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664c30ebe3ed39e4cbca884a7460f166
+      internalID: -1964435141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d59369be2479704fb603edb34e1c83c
+      internalID: -1343706139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_95
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18c06671bb8a8847b0cfb1895817d69
+      internalID: 1154765807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_96
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81b6bc0d6676b349a83702d6260678b
+      internalID: 1701672610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_97
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cddb0a39542f13448fea6fde33e32ee
+      internalID: -1844851597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_98
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e540388bf52264b95381283c8e7d3e
+      internalID: 2056102928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_99
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 64
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487e1c5806d171146bdb81caa3628fc0
+      internalID: -520286736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9fee9622106394092e57262c407325
+      internalID: -1573627340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_101
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f62c4d80ca7b024f85f37dc70de2e2c
+      internalID: 306430004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_102
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d55dabaa086567459be3c6d92918fd3
+      internalID: 1558145713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_103
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5b2210ce798ef448edbabc9738dafd
+      internalID: 1704541004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_104
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52cee19726ec2e44fb98e2c882659462
+      internalID: 1756049680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_105
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5012c97e56e3d349b8c3f72e8d71c4d
+      internalID: 665593310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_106
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9396e1b6ba261d04ab87e6dfc83948e2
+      internalID: 444480976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_107
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8528e8d9c07204eb64d2445f2bbf87
+      internalID: -1514412847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_108
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2cc619895140847bfe829001698401
+      internalID: -1452237656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_109
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b5f5104d3fe204faaf2753052660b8
+      internalID: -1747935803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_110
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181fd1a7e72441a4c8ee26dddb912f68
+      internalID: 1936589602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_111
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93512713883b44d45bba6efecbb3f358
+      internalID: 1501021360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_112
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c89bfde72f98ca4dad44a08d2da09a6
+      internalID: -505776641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_113
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4e97124b501bb428f131b2d0986993
+      internalID: -1613139519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_114
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2466dad4f89449c47a3fb2c29a1d248f
+      internalID: -1972667177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_115
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf2d5443f637fa4d978f6f9ad56fdc6
+      internalID: -1338444653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_116
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ee8b042a7360a46909679db82f8714
+      internalID: -1256061917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_117
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fd239011e317544a53facc27474b38
+      internalID: 1089493275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_118
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a381a404bb4f14eb862ea28583f9b0
+      internalID: 752703321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_119
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2ff40b27e8edf4a9851e3746296ce1
+      internalID: 833690727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_120
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060430cf4168da947bb6854b47a5b090
+      internalID: 1937903683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_121
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fca8fb446b6bd47a1a8c14ffed6e9a
+      internalID: -1107302963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_122
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f06fd6ee92659d4eb3f5ec338c386b0
+      internalID: 1479482124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_123
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa1ab7bdf6fe5c4a86dd8a88aee8c16
+      internalID: 1239621165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_124
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295ab8a45efa5bc4babe15beb1da4639
+      internalID: -511244717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_125
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b431dd0f47e97794f954b50d120e140a
+      internalID: -2105855935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_126
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51781893387cd4f48a2f3e16ccdd98e1
+      internalID: 908126870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_127
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011f702ce5e4c864688fbfa81f56f7b4
+      internalID: 2057441793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_128
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7455719d41a46c4691aadc4359b54a7
+      internalID: 1205708067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_129
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7352b092ca6b6d8469f508b494c3b54c
+      internalID: -705737472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_130
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9910d744973a2f542aeb475764c0a28b
+      internalID: -1706642032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_131
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb27c9d617840543a222621ba94c970
+      internalID: -265846834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_132
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9956a972b92a28e4a9da1fade289846b
+      internalID: 289677826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_133
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24ce63cc04bba4419210ff755f690bd
+      internalID: -275370056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_134
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4d3e71868e20340adf41d274d5d8eb
+      internalID: -177270574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_135
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998d7e4620e593a4baa25a44b885fdea
+      internalID: -1207667845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_136
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6a10233a97a1a4785606a71bfe5b7e
+      internalID: 1401079553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_137
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7523d675153546c469d8a6310bf2acf7
+      internalID: -797750236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_138
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1ad7052d5b8c64298e451e0360fc3b
+      internalID: 39415751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_139
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5ed984459fa45468bf77d6e3604d90
+      internalID: -237557575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_140
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f89e9c8615b9443800b5f17b99dea7
+      internalID: -1706369579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_141
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712f157fdd3fbb140acd098d208bbed6
+      internalID: 2086062532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_142
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787cd4ba37348a4458c4f44e5550f7f8
+      internalID: 741271292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_143
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522521e443e723d439f621aa00f20f1f
+      internalID: -1575751078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_144
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6254662383585a24d86b8b1b85615e2d
+      internalID: -971469329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_145
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1086442a7e5f64da4088c036b49335
+      internalID: -1215195571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_146
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11dbd5627268a6947bbc9aac6c0c6d3b
+      internalID: 315780999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_147
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e2b89c59077b448a985e2890b1197c
+      internalID: 740271736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_148
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9a38f524ceffd43852793604449392
+      internalID: 1167795312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_149
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 32
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50357c5fca8edc49975c20c439df118
+      internalID: -1527576895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_150
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6abce7c0397094c9f3efca6273ba7d
+      internalID: 51813780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_151
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: becfb7b0b36765a4598d27bac33e9433
+      internalID: 470058785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_152
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee59453cfad5eb4c8e68cd007ff2e4a
+      internalID: -212092631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_153
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1f309d60ed5dd4382ef6f3a9e9723b
+      internalID: 214974246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_154
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26cfd0bafdc59534d809606b5f7f831e
+      internalID: -1165406711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_155
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ae23e87309e2b498905c1795ebf996
+      internalID: -1973841838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_156
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883596d91f07b6d44a43b5ec7ab7a0a2
+      internalID: 1359999690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_157
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209c525b0da7c104a86d9ece38d12ba2
+      internalID: -923555157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_158
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c111d061b584c24f945b4e745cbf01c
+      internalID: -2049888280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_159
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c1ee6b61779154c9f74d2866424531
+      internalID: 939774789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_160
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babc1fd616feee24da59cf774cefda9c
+      internalID: -203090469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_161
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d883f28951747345915e8865ceda714
+      internalID: -942084254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_162
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53700c6e3f90a54bb37bba9d2747a7e
+      internalID: -466805258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_163
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b885305a0d008f949af3f096f3ae9f09
+      internalID: -1442516339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_164
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ed18eff52ab1742867606a64d54394
+      internalID: -2012911830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_165
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896996d2a904cf34c931b35a2cfd33f3
+      internalID: -1827261652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_166
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd1ec6abb2d96745b7455d63057105c
+      internalID: 163693402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_167
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22554a9bc4248c746b7364328125d7ca
+      internalID: 516475696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_168
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9340262ed474704ba2706b3b4079a45
+      internalID: 1975280273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_169
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd4960afd843dd4582b07cf7f5f3c0e
+      internalID: 1106926809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_170
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7ed281b0b9adc47b3ee973a684e859
+      internalID: -166984955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_171
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e5f0db3d8118d44b795acbf7d42277
+      internalID: -179856362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_172
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa77105953c250641a6f380ee0fe978b
+      internalID: 1429334796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_173
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839697bbc1a713a47b01540b8baa4bbc
+      internalID: -1623770785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_174
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdaa5dff5e324b4eb2533267e8aaf18
+      internalID: 1240522656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_175
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25772f046a19fa43a2943256d35f54f
+      internalID: -2001491127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_176
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bf5d614b689974dbb77eb3e0272563
+      internalID: -1486160079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_177
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009600ce329126140b39b5a3ef4b4591
+      internalID: -1096107787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_178
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b16b70c36feb5499be6e672463acc2
+      internalID: -161010342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_179
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b508070414b1c5547b68baa1be26a7ff
+      internalID: 1393043158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_180
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63c8652f2215484bade009636137d49
+      internalID: 1570188840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_181
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb3025fba194904eae013fe6720fbc1
+      internalID: -141619923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_182
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124f4314863d5774ba817f62e72d3fe6
+      internalID: -2039779108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_183
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be7b1082bc93974ca24b428b06d0adb
+      internalID: -328389150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_184
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c56cb266a3a9e4ca1ef245c1a79cb6
+      internalID: 467519657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_185
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99053d277b6f92f4eb85ed736df630d5
+      internalID: -548884558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_186
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aefcefb03e794e45b4c7601b465e51e
+      internalID: 1270079469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_187
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358d7fd0889c7a34fa8324ea933fd988
+      internalID: 1231301205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_188
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aba405f925bb6a46b0ce9f5f9a3e653
+      internalID: 1627958204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_189
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125996fb39dfea846ab4dedb976e3b1d
+      internalID: -1121081735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_190
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758960b3bec4cb9409a7eee200fe3aa1
+      internalID: -1664999344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_191
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af195e3a764f9d46b0c90eba1c649b0
+      internalID: -282576667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_192
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a58129a169a9cb4ba4596900dfd86dd
+      internalID: -1817437569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_193
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca306091744a8842bed1c0344bf13b7
+      internalID: -888976926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_194
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db522086aa3391d4581775021e7a533c
+      internalID: 978927883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_195
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6371c39cde7c552449839e361aa75a7b
+      internalID: -948398618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_196
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1c401bf6fd7c9449c0703ad3d3fde3
+      internalID: -2118267889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_197
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9803ae3bc1fcc354ab490afe07ccd082
+      internalID: 1159479635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_198
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e5dad87cdd4914cb0b41203bad71ca
+      internalID: 1145728651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Spruce Tree - GREEN - Spritesheet_199
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 0
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f519277cc43114da42f39efd64c4dc
+      internalID: -1346917322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Large Spruce Tree - GREEN - Spritesheet_0: -121936342
+      Large Spruce Tree - GREEN - Spritesheet_1: 1162453572
+      Large Spruce Tree - GREEN - Spritesheet_10: 200180470
+      Large Spruce Tree - GREEN - Spritesheet_100: -1573627340
+      Large Spruce Tree - GREEN - Spritesheet_101: 306430004
+      Large Spruce Tree - GREEN - Spritesheet_102: 1558145713
+      Large Spruce Tree - GREEN - Spritesheet_103: 1704541004
+      Large Spruce Tree - GREEN - Spritesheet_104: 1756049680
+      Large Spruce Tree - GREEN - Spritesheet_105: 665593310
+      Large Spruce Tree - GREEN - Spritesheet_106: 444480976
+      Large Spruce Tree - GREEN - Spritesheet_107: -1514412847
+      Large Spruce Tree - GREEN - Spritesheet_108: -1452237656
+      Large Spruce Tree - GREEN - Spritesheet_109: -1747935803
+      Large Spruce Tree - GREEN - Spritesheet_11: 1813731063
+      Large Spruce Tree - GREEN - Spritesheet_110: 1936589602
+      Large Spruce Tree - GREEN - Spritesheet_111: 1501021360
+      Large Spruce Tree - GREEN - Spritesheet_112: -505776641
+      Large Spruce Tree - GREEN - Spritesheet_113: -1613139519
+      Large Spruce Tree - GREEN - Spritesheet_114: -1972667177
+      Large Spruce Tree - GREEN - Spritesheet_115: -1338444653
+      Large Spruce Tree - GREEN - Spritesheet_116: -1256061917
+      Large Spruce Tree - GREEN - Spritesheet_117: 1089493275
+      Large Spruce Tree - GREEN - Spritesheet_118: 752703321
+      Large Spruce Tree - GREEN - Spritesheet_119: 833690727
+      Large Spruce Tree - GREEN - Spritesheet_12: 868710713
+      Large Spruce Tree - GREEN - Spritesheet_120: 1937903683
+      Large Spruce Tree - GREEN - Spritesheet_121: -1107302963
+      Large Spruce Tree - GREEN - Spritesheet_122: 1479482124
+      Large Spruce Tree - GREEN - Spritesheet_123: 1239621165
+      Large Spruce Tree - GREEN - Spritesheet_124: -511244717
+      Large Spruce Tree - GREEN - Spritesheet_125: -2105855935
+      Large Spruce Tree - GREEN - Spritesheet_126: 908126870
+      Large Spruce Tree - GREEN - Spritesheet_127: 2057441793
+      Large Spruce Tree - GREEN - Spritesheet_128: 1205708067
+      Large Spruce Tree - GREEN - Spritesheet_129: -705737472
+      Large Spruce Tree - GREEN - Spritesheet_13: -672903369
+      Large Spruce Tree - GREEN - Spritesheet_130: -1706642032
+      Large Spruce Tree - GREEN - Spritesheet_131: -265846834
+      Large Spruce Tree - GREEN - Spritesheet_132: 289677826
+      Large Spruce Tree - GREEN - Spritesheet_133: -275370056
+      Large Spruce Tree - GREEN - Spritesheet_134: -177270574
+      Large Spruce Tree - GREEN - Spritesheet_135: -1207667845
+      Large Spruce Tree - GREEN - Spritesheet_136: 1401079553
+      Large Spruce Tree - GREEN - Spritesheet_137: -797750236
+      Large Spruce Tree - GREEN - Spritesheet_138: 39415751
+      Large Spruce Tree - GREEN - Spritesheet_139: -237557575
+      Large Spruce Tree - GREEN - Spritesheet_14: 1461938080
+      Large Spruce Tree - GREEN - Spritesheet_140: -1706369579
+      Large Spruce Tree - GREEN - Spritesheet_141: 2086062532
+      Large Spruce Tree - GREEN - Spritesheet_142: 741271292
+      Large Spruce Tree - GREEN - Spritesheet_143: -1575751078
+      Large Spruce Tree - GREEN - Spritesheet_144: -971469329
+      Large Spruce Tree - GREEN - Spritesheet_145: -1215195571
+      Large Spruce Tree - GREEN - Spritesheet_146: 315780999
+      Large Spruce Tree - GREEN - Spritesheet_147: 740271736
+      Large Spruce Tree - GREEN - Spritesheet_148: 1167795312
+      Large Spruce Tree - GREEN - Spritesheet_149: -1527576895
+      Large Spruce Tree - GREEN - Spritesheet_15: -1602982673
+      Large Spruce Tree - GREEN - Spritesheet_150: 51813780
+      Large Spruce Tree - GREEN - Spritesheet_151: 470058785
+      Large Spruce Tree - GREEN - Spritesheet_152: -212092631
+      Large Spruce Tree - GREEN - Spritesheet_153: 214974246
+      Large Spruce Tree - GREEN - Spritesheet_154: -1165406711
+      Large Spruce Tree - GREEN - Spritesheet_155: -1973841838
+      Large Spruce Tree - GREEN - Spritesheet_156: 1359999690
+      Large Spruce Tree - GREEN - Spritesheet_157: -923555157
+      Large Spruce Tree - GREEN - Spritesheet_158: -2049888280
+      Large Spruce Tree - GREEN - Spritesheet_159: 939774789
+      Large Spruce Tree - GREEN - Spritesheet_16: -799587742
+      Large Spruce Tree - GREEN - Spritesheet_160: -203090469
+      Large Spruce Tree - GREEN - Spritesheet_161: -942084254
+      Large Spruce Tree - GREEN - Spritesheet_162: -466805258
+      Large Spruce Tree - GREEN - Spritesheet_163: -1442516339
+      Large Spruce Tree - GREEN - Spritesheet_164: -2012911830
+      Large Spruce Tree - GREEN - Spritesheet_165: -1827261652
+      Large Spruce Tree - GREEN - Spritesheet_166: 163693402
+      Large Spruce Tree - GREEN - Spritesheet_167: 516475696
+      Large Spruce Tree - GREEN - Spritesheet_168: 1975280273
+      Large Spruce Tree - GREEN - Spritesheet_169: 1106926809
+      Large Spruce Tree - GREEN - Spritesheet_17: 470466431
+      Large Spruce Tree - GREEN - Spritesheet_170: -166984955
+      Large Spruce Tree - GREEN - Spritesheet_171: -179856362
+      Large Spruce Tree - GREEN - Spritesheet_172: 1429334796
+      Large Spruce Tree - GREEN - Spritesheet_173: -1623770785
+      Large Spruce Tree - GREEN - Spritesheet_174: 1240522656
+      Large Spruce Tree - GREEN - Spritesheet_175: -2001491127
+      Large Spruce Tree - GREEN - Spritesheet_176: -1486160079
+      Large Spruce Tree - GREEN - Spritesheet_177: -1096107787
+      Large Spruce Tree - GREEN - Spritesheet_178: -161010342
+      Large Spruce Tree - GREEN - Spritesheet_179: 1393043158
+      Large Spruce Tree - GREEN - Spritesheet_18: -452214216
+      Large Spruce Tree - GREEN - Spritesheet_180: 1570188840
+      Large Spruce Tree - GREEN - Spritesheet_181: -141619923
+      Large Spruce Tree - GREEN - Spritesheet_182: -2039779108
+      Large Spruce Tree - GREEN - Spritesheet_183: -328389150
+      Large Spruce Tree - GREEN - Spritesheet_184: 467519657
+      Large Spruce Tree - GREEN - Spritesheet_185: -548884558
+      Large Spruce Tree - GREEN - Spritesheet_186: 1270079469
+      Large Spruce Tree - GREEN - Spritesheet_187: 1231301205
+      Large Spruce Tree - GREEN - Spritesheet_188: 1627958204
+      Large Spruce Tree - GREEN - Spritesheet_189: -1121081735
+      Large Spruce Tree - GREEN - Spritesheet_19: -718268477
+      Large Spruce Tree - GREEN - Spritesheet_190: -1664999344
+      Large Spruce Tree - GREEN - Spritesheet_191: -282576667
+      Large Spruce Tree - GREEN - Spritesheet_192: -1817437569
+      Large Spruce Tree - GREEN - Spritesheet_193: -888976926
+      Large Spruce Tree - GREEN - Spritesheet_194: 978927883
+      Large Spruce Tree - GREEN - Spritesheet_195: -948398618
+      Large Spruce Tree - GREEN - Spritesheet_196: -2118267889
+      Large Spruce Tree - GREEN - Spritesheet_197: 1159479635
+      Large Spruce Tree - GREEN - Spritesheet_198: 1145728651
+      Large Spruce Tree - GREEN - Spritesheet_199: -1346917322
+      Large Spruce Tree - GREEN - Spritesheet_2: 1506680076
+      Large Spruce Tree - GREEN - Spritesheet_20: -2134302125
+      Large Spruce Tree - GREEN - Spritesheet_21: -878075424
+      Large Spruce Tree - GREEN - Spritesheet_22: 1511059995
+      Large Spruce Tree - GREEN - Spritesheet_23: 718503559
+      Large Spruce Tree - GREEN - Spritesheet_24: 644756824
+      Large Spruce Tree - GREEN - Spritesheet_25: 1264242570
+      Large Spruce Tree - GREEN - Spritesheet_26: -829181625
+      Large Spruce Tree - GREEN - Spritesheet_27: -779529103
+      Large Spruce Tree - GREEN - Spritesheet_28: 963788188
+      Large Spruce Tree - GREEN - Spritesheet_29: -490566926
+      Large Spruce Tree - GREEN - Spritesheet_3: 378992331
+      Large Spruce Tree - GREEN - Spritesheet_30: 1463040156
+      Large Spruce Tree - GREEN - Spritesheet_31: 1702712402
+      Large Spruce Tree - GREEN - Spritesheet_32: 71399018
+      Large Spruce Tree - GREEN - Spritesheet_33: -989066331
+      Large Spruce Tree - GREEN - Spritesheet_34: 1826031131
+      Large Spruce Tree - GREEN - Spritesheet_35: 420956642
+      Large Spruce Tree - GREEN - Spritesheet_36: -1212786725
+      Large Spruce Tree - GREEN - Spritesheet_37: 1746942104
+      Large Spruce Tree - GREEN - Spritesheet_38: -1580739282
+      Large Spruce Tree - GREEN - Spritesheet_39: -1392415484
+      Large Spruce Tree - GREEN - Spritesheet_4: -1831277327
+      Large Spruce Tree - GREEN - Spritesheet_40: -2119931011
+      Large Spruce Tree - GREEN - Spritesheet_41: 260383066
+      Large Spruce Tree - GREEN - Spritesheet_42: -869950222
+      Large Spruce Tree - GREEN - Spritesheet_43: 1234617809
+      Large Spruce Tree - GREEN - Spritesheet_44: 2131176108
+      Large Spruce Tree - GREEN - Spritesheet_45: -1220478418
+      Large Spruce Tree - GREEN - Spritesheet_46: 2022184860
+      Large Spruce Tree - GREEN - Spritesheet_47: -904981379
+      Large Spruce Tree - GREEN - Spritesheet_48: 641188590
+      Large Spruce Tree - GREEN - Spritesheet_49: -1821237634
+      Large Spruce Tree - GREEN - Spritesheet_5: -2018476186
+      Large Spruce Tree - GREEN - Spritesheet_50: 1163281590
+      Large Spruce Tree - GREEN - Spritesheet_51: 1221448616
+      Large Spruce Tree - GREEN - Spritesheet_52: -1576027656
+      Large Spruce Tree - GREEN - Spritesheet_53: 1814386724
+      Large Spruce Tree - GREEN - Spritesheet_54: 87513398
+      Large Spruce Tree - GREEN - Spritesheet_55: -654920538
+      Large Spruce Tree - GREEN - Spritesheet_56: -103390711
+      Large Spruce Tree - GREEN - Spritesheet_57: 1692348368
+      Large Spruce Tree - GREEN - Spritesheet_58: 1261882208
+      Large Spruce Tree - GREEN - Spritesheet_59: -163421451
+      Large Spruce Tree - GREEN - Spritesheet_6: -1527474147
+      Large Spruce Tree - GREEN - Spritesheet_60: 993963358
+      Large Spruce Tree - GREEN - Spritesheet_61: -1446975491
+      Large Spruce Tree - GREEN - Spritesheet_62: 378376393
+      Large Spruce Tree - GREEN - Spritesheet_63: 461734186
+      Large Spruce Tree - GREEN - Spritesheet_64: 868483255
+      Large Spruce Tree - GREEN - Spritesheet_65: -2026656050
+      Large Spruce Tree - GREEN - Spritesheet_66: -211924050
+      Large Spruce Tree - GREEN - Spritesheet_67: 30858659
+      Large Spruce Tree - GREEN - Spritesheet_68: -344197682
+      Large Spruce Tree - GREEN - Spritesheet_69: 1465705529
+      Large Spruce Tree - GREEN - Spritesheet_7: 1322276608
+      Large Spruce Tree - GREEN - Spritesheet_70: -971780615
+      Large Spruce Tree - GREEN - Spritesheet_71: -1220099076
+      Large Spruce Tree - GREEN - Spritesheet_72: -190566769
+      Large Spruce Tree - GREEN - Spritesheet_73: 211010871
+      Large Spruce Tree - GREEN - Spritesheet_74: 1535105331
+      Large Spruce Tree - GREEN - Spritesheet_75: -1901497148
+      Large Spruce Tree - GREEN - Spritesheet_76: -1591121669
+      Large Spruce Tree - GREEN - Spritesheet_77: -95285094
+      Large Spruce Tree - GREEN - Spritesheet_78: 639371697
+      Large Spruce Tree - GREEN - Spritesheet_79: 80356423
+      Large Spruce Tree - GREEN - Spritesheet_8: -953479432
+      Large Spruce Tree - GREEN - Spritesheet_80: 900968740
+      Large Spruce Tree - GREEN - Spritesheet_81: -1050579267
+      Large Spruce Tree - GREEN - Spritesheet_82: 1644771707
+      Large Spruce Tree - GREEN - Spritesheet_83: 387296729
+      Large Spruce Tree - GREEN - Spritesheet_84: 1723578372
+      Large Spruce Tree - GREEN - Spritesheet_85: -669571169
+      Large Spruce Tree - GREEN - Spritesheet_86: -80736612
+      Large Spruce Tree - GREEN - Spritesheet_87: 275356231
+      Large Spruce Tree - GREEN - Spritesheet_88: -451404493
+      Large Spruce Tree - GREEN - Spritesheet_89: 444497138
+      Large Spruce Tree - GREEN - Spritesheet_9: -640988875
+      Large Spruce Tree - GREEN - Spritesheet_90: 67951023
+      Large Spruce Tree - GREEN - Spritesheet_91: -1721088870
+      Large Spruce Tree - GREEN - Spritesheet_92: -804992165
+      Large Spruce Tree - GREEN - Spritesheet_93: -1964435141
+      Large Spruce Tree - GREEN - Spritesheet_94: -1343706139
+      Large Spruce Tree - GREEN - Spritesheet_95: 1154765807
+      Large Spruce Tree - GREEN - Spritesheet_96: 1701672610
+      Large Spruce Tree - GREEN - Spritesheet_97: -1844851597
+      Large Spruce Tree - GREEN - Spritesheet_98: 2056102928
+      Large Spruce Tree - GREEN - Spritesheet_99: -520286736
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -22,6 +22,10 @@ public class ReturnDetector : MonoBehaviour
         
     }
 
+    private void LockUnlockPlayer(GameObject other)
+    {
+        other.gameObject.GetComponent<PlayerController>().playerLocked = !other.gameObject.GetComponent<PlayerController>().playerLocked;
+    }
     // Upon collision with the player, progress objective
     private void OnCollisionEnter2D(Collision2D other)
     {
