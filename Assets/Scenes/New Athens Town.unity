@@ -105621,6 +105621,9 @@ MonoBehaviour:
   teleportLocation: {fileID: 1187469965}
   sceneName: 
   changeScene: 0
+  locked: 0
+  lockedMessage: This door is locked.
+  dialogueBoxController: {fileID: 0}
 --- !u!95 &727439472
 Animator:
   serializedVersion: 7
@@ -108917,7 +108920,7 @@ Tilemap:
       - {fileID: -251811701, guid: 4f6f5eedea8e83046955c4bb3230cf4d, type: 3}
       - {fileID: -1182986827, guid: 4f6f5eedea8e83046955c4bb3230cf4d, type: 3}
       - {fileID: 336071954, guid: 4f6f5eedea8e83046955c4bb3230cf4d, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 59, y: 59, z: 0}
@@ -110483,6 +110486,9 @@ MonoBehaviour:
   teleportLocation: {fileID: 898212651}
   sceneName: 
   changeScene: 0
+  locked: 0
+  lockedMessage: This door is locked.
+  dialogueBoxController: {fileID: 0}
 --- !u!95 &823987556
 Animator:
   serializedVersion: 7
@@ -111052,6 +111058,9 @@ MonoBehaviour:
   teleportLocation: {fileID: 823987552}
   sceneName: 
   changeScene: 0
+  locked: 0
+  lockedMessage: This door is locked.
+  dialogueBoxController: {fileID: 0}
 --- !u!95 &898212655
 Animator:
   serializedVersion: 7
@@ -121362,6 +121371,9 @@ MonoBehaviour:
   teleportLocation: {fileID: 0}
   sceneName: Courtroom
   changeScene: 1
+  locked: 0
+  lockedMessage: This door is locked.
+  dialogueBoxController: {fileID: 0}
 --- !u!95 &1208036202
 Animator:
   serializedVersion: 7
@@ -121639,6 +121651,9 @@ MonoBehaviour:
   teleportLocation: {fileID: 1206158005}
   sceneName: 
   changeScene: 0
+  locked: 0
+  lockedMessage: This door is locked.
+  dialogueBoxController: {fileID: 0}
 --- !u!95 &1293519949
 Animator:
   serializedVersion: 7
@@ -123014,6 +123029,7 @@ Transform:
   - {fileID: 823987552}
   - {fileID: 1293519945}
   - {fileID: 2024990710}
+  - {fileID: 1845688317}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1642919291
@@ -143157,6 +143173,58 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1845688316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1845688317}
+  - component: {fileID: 1845688318}
+  m_Layer: 0
+  m_Name: DoorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1845688317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845688316}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1585236055}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1845688318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845688316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96c4e5a1fc1a74ad1a7a2f8213823e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levels:
+  - key: level1
+    locked: 1
+    doors:
+    - {fileID: 2024990709}
+    - {fileID: 2024990709}
+    - {fileID: 2024990709}
+  dialogueBoxController: {fileID: 2002670157}
 --- !u!1 &1899599055
 GameObject:
   m_ObjectHideFlags: 0
@@ -144340,6 +144408,9 @@ MonoBehaviour:
   teleportLocation: {fileID: 1187469965}
   sceneName: 
   changeScene: 0
+  locked: 0
+  lockedMessage: This door is locked.
+  dialogueBoxController: {fileID: 0}
 --- !u!95 &2024990714
 Animator:
   serializedVersion: 7

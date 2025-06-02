@@ -33,7 +33,7 @@ public class OutsideDetector : MonoBehaviour
             Debug.Log("Should be heading home...");
             // Show dialogue
             dialogueBox.AddDialogue("character_player", "I should head home... it's getting quite late.");
-            StartCoroutine(dialogueBox.ShowDialogue()); // Show the dialogue and change scene
+            StartCoroutine(dialogueBox.TypeDialogue()); // Show the dialogue and change scene
             
         }
 
@@ -44,7 +44,7 @@ public class OutsideDetector : MonoBehaviour
 
             // Show dialogue
             dialogueBox.AddDialogue("character_player", "Better head home before the sun comes up!");
-            StartCoroutine(dialogueBox.ShowDialogue()); // Show the dialogue and change scene
+            StartCoroutine(dialogueBox.TypeDialogue()); // Show the dialogue and change scene
         }
     }
 }

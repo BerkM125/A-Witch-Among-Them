@@ -13,9 +13,14 @@ public class DoorController : MonoBehaviour
     public Transform teleportLocation;
     public string sceneName;
     public bool changeScene;
+
+    public bool locked = false;
+    public string lockedMessage = "This door is locked.";
+
+    public DialogueBoxController dialogueBoxController;
     void Start()
     {
-        animator = GetComponent<Animator>(); 
+        animator = GetComponent<Animator>();
         circleCollider2D = GetComponent<CircleCollider2D>();
         animator.SetBool("IsOpen", false);
         audioSource = GetComponent<AudioSource>();
@@ -31,22 +36,55 @@ public class DoorController : MonoBehaviour
             }
         }
     }
-    void Update() {
-        animator.SetBool("IsOpen", open);
-        if (open && Input.GetKeyDown(KeyCode.E)) {
-            audioSource.Play();
-            if (!changeScene) {
-            // if (Vector2.Distance(transform.position, teleportLocation.position) < minTeleportDistance)
-            // {
-                GameObject.FindGameObjectWithTag("Player").transform.position = teleportLocation.position;
-            // }
+    void Update()
+    {
+        if (!locked || (locked && !open))
+        {
+            animator.SetBool("IsOpen", open);
+        }
+        if (open && Input.GetKeyDown(KeyCode.E))
+        {
+            if (locked)
+            {
+                if (dialogueBoxController != null)
+                {
+                    dialogueBoxController.AddDialogue("character_player", lockedMessage);
+                    dialogueBoxController.ShowDialogue();
+                    // StartCoroutine(dialogueBoxController.TypeDialogue());
+                }
+                else
+                {
+                    Debug.LogWarning("DialogueController is not assigned. Please assign it in the inspector.");
+                }
             }
-            else if (gameObject.name == "Square") {
-                // Code to load the scene from sceneName string
-                DestroyPersistentObjects();
-                DestroyPersistentObjects();
+            else if (audioSource.isPlaying)
+            {
+                // If the audio is already playing, do nothing
+                return;
+            }
+            else if (animator.GetCurrentAnimatorStateInfo(0).IsName("DoorOpen"))
+            {
+                // If the door is already open, do nothing
+                return;
+            }
+            else
+            {
+                audioSource.Play();
+                if (!changeScene)
+                {
+                    // if (Vector2.Distance(transform.position, teleportLocation.position) < minTeleportDistance)
+                    // {
+                    GameObject.FindGameObjectWithTag("Player").transform.position = teleportLocation.position;
+                    // }
+                }
+                else if (gameObject.name == "Square")
+                {
+                    // Code to load the scene from sceneName string
+                    DestroyPersistentObjects();
+                    DestroyPersistentObjects();
 
-                UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+                }
             }
         }
     }

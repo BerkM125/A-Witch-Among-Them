@@ -44,7 +44,7 @@ public class ElaraConversation : MonoBehaviour
 
         dialogueBox.AddDialogue("character_player", "Thanks Elara! I'll be looking carefully... you've been such a great friend so far.");
 
-        StartCoroutine(dialogueBox.ShowDialogue());
+        StartCoroutine(dialogueBox.TypeDialogue());
 
         om.ProgressObjective();
 

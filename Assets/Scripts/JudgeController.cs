@@ -46,7 +46,7 @@ public class JudgeController : MonoBehaviour
         playerDialogue = player.GetComponent<PlayerDialogue>();
 
         dialogueBoxController.AddDialogue("character_judge", "Give me a minute before I deliver my opening statement...");
-        StartCoroutine(dialogueBoxController.ShowDialogue());
+        StartCoroutine(dialogueBoxController.TypeDialogue());
 
         SetCurrentContext("judgeContext");
 
@@ -81,7 +81,7 @@ public class JudgeController : MonoBehaviour
     {
         judgePrompt = message;
         dialogueBoxController.AddDialogue("character_judge", "Let me think...");
-        StartCoroutine(dialogueBoxController.ShowDialogue());
+        StartCoroutine(dialogueBoxController.TypeDialogue());
 
         StartCoroutine(ModelBridge.Bridge.ChatCompletion("https://api.deepseek.com",
                                                     judgeInstructions,
@@ -163,7 +163,7 @@ public class JudgeController : MonoBehaviour
     void ProcessDialogue(string response)
     {
         dialogueBoxController.AddDialogue(contextDialogueMap[currentContext], response);
-        StartCoroutine(dialogueBoxController.ShowDialogue());
+        StartCoroutine(dialogueBoxController.TypeDialogue());
         playerDialogue.EnableChat();
 
         // Open the judge_instructions.json file and prepare it for writing

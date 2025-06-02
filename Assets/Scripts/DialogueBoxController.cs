@@ -50,7 +50,7 @@ public class DialogueBoxController : MonoBehaviour
         nameText.text = name;
     }
 
-    public IEnumerator ShowDialogue()
+    public IEnumerator TypeDialogue()
     {
         textDone = false;
 
@@ -63,6 +63,15 @@ public class DialogueBoxController : MonoBehaviour
             mouseDown = false;
         }
 
+        textDone = true;
+    }
+
+    public void ShowDialogue()
+    {
+        Tuple<string, string> message = dialogues.Dequeue();
+        SetActive(true, message.Item1);
+        dialogueText.text = message.Item2;
+        mouseDown = false;
         textDone = true;
     }
 
