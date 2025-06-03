@@ -17,8 +17,29 @@ namespace CampaignObjects {
         }
     }
 
+    // Called LevelContainer to avoid confusion with DoorManager.Level
+    public class LevelContainer {
+        public int levelNumber;
+        public int interactionLimit;
+        
+        // This key will be used to unlock the necessary doors.
+        public string doorLevelKey;
+        // Thing that stores the evidence?
+        
+        // Thing that stores the objectives
+        public Objective[] objectives;
+        // Thing that stores the player data?
+
+        [SerializeField]
+        private DoorManager doorManager;
+
+        public void OpenLevelDoors() {
+            // UNLOCKED
+            doorManager.ChangeLevelLockStatus(doorLevelKey, false);
+        }
+    }
+
     public class Item {
 
     }
-
 }

@@ -66,6 +66,7 @@ namespace ModelBridge {
                                                 string prompt,
                                                 Action<string> callback)
         {
+            Debug.Log("INITIATING CHAT COMPLETION...");
             // Create JSON payload
             string jsonData = LoadJSON(modelURI, FormatForHttp(systemInstructions), FormatForHttp(prompt));
             jsonData = ReformatForGemini(jsonData);

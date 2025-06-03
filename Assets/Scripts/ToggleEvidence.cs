@@ -34,7 +34,6 @@ public class ToggleEvidence : MonoBehaviour
             
             if ((rectTransform.rect.width-targetSize.x) <= 1f && Math.Abs(rectTransform.rect.height-targetSize.y) <= 1f)
             {
-                Debug.Log("Reached target size: " + targetSize);
                 growing = !growing;
             }
         }

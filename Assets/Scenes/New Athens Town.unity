@@ -1333,7 +1333,6 @@ GameObject:
   - component: {fileID: 272363445}
   - component: {fileID: 272363444}
   - component: {fileID: 272363443}
-  - component: {fileID: 272363442}
   - component: {fileID: 272363441}
   - component: {fileID: 272363440}
   m_Layer: 0
@@ -1393,20 +1392,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.29579163}
   m_Radius: 0.39875603
---- !u!114 &272363442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272363439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf363845bbab46f4ea193bee4c3448a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectiveHandler: {fileID: 2068826891}
-  dialogueBox: {fileID: 2002670157}
 --- !u!61 &272363443
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27534,7 +27519,6 @@ GameObject:
   - component: {fileID: 714517352}
   - component: {fileID: 714517351}
   - component: {fileID: 714517350}
-  - component: {fileID: 714517349}
   - component: {fileID: 714517348}
   - component: {fileID: 714517347}
   m_Layer: 0
@@ -27594,20 +27578,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.29579163}
   m_Radius: 0.39875603
---- !u!114 &714517349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 714517346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf363845bbab46f4ea193bee4c3448a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectiveHandler: {fileID: 2068826891}
-  dialogueBox: {fileID: 2002670157}
 --- !u!61 &714517350
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -108876,7 +108846,7 @@ Tilemap:
       - {fileID: -931963917, guid: 4f6f5eedea8e83046955c4bb3230cf4d, type: 3}
       - {fileID: 1055285701, guid: 4f6f5eedea8e83046955c4bb3230cf4d, type: 3}
       - {fileID: -1607204366, guid: 4f6f5eedea8e83046955c4bb3230cf4d, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 59, y: 58, z: 0}
@@ -111275,7 +111245,6 @@ GameObject:
   - component: {fileID: 965606695}
   - component: {fileID: 965606694}
   - component: {fileID: 965606693}
-  - component: {fileID: 965606692}
   - component: {fileID: 965606691}
   - component: {fileID: 965606690}
   m_Layer: 0
@@ -111335,20 +111304,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.07258635}
   m_Radius: 0.17555068
---- !u!114 &965606692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965606689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf363845bbab46f4ea193bee4c3448a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectiveHandler: {fileID: 2068826891}
-  dialogueBox: {fileID: 2002670157}
 --- !u!61 &965606693
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -122272,7 +122227,6 @@ GameObject:
   - component: {fileID: 1532159688}
   - component: {fileID: 1532159687}
   - component: {fileID: 1532159686}
-  - component: {fileID: 1532159685}
   - component: {fileID: 1532159684}
   - component: {fileID: 1532159683}
   m_Layer: 0
@@ -122332,20 +122286,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.29579163}
   m_Radius: 0.39875603
---- !u!114 &1532159685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532159682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf363845bbab46f4ea193bee4c3448a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectiveHandler: {fileID: 2068826891}
-  dialogueBox: {fileID: 2002670157}
 --- !u!61 &1532159686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -122762,7 +122702,6 @@ GameObject:
   - component: {fileID: 1562033464}
   - component: {fileID: 1562033463}
   - component: {fileID: 1562033462}
-  - component: {fileID: 1562033461}
   - component: {fileID: 1562033460}
   - component: {fileID: 1562033459}
   m_Layer: 0
@@ -122822,20 +122761,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.06868795}
   m_Radius: 0.17165233
---- !u!114 &1562033461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562033458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf363845bbab46f4ea193bee4c3448a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectiveHandler: {fileID: 2068826891}
-  dialogueBox: {fileID: 2002670157}
 --- !u!61 &1562033462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -135584,7 +135509,6 @@ GameObject:
   - component: {fileID: 1645007347}
   - component: {fileID: 1645007346}
   - component: {fileID: 1645007345}
-  - component: {fileID: 1645007344}
   - component: {fileID: 1645007343}
   - component: {fileID: 1645007342}
   m_Layer: 0
@@ -135644,20 +135568,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.0058130086, y: -0.083617896}
   m_Radius: 0.1536421
---- !u!114 &1645007344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645007341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf363845bbab46f4ea193bee4c3448a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectiveHandler: {fileID: 2068826891}
-  dialogueBox: {fileID: 2002670157}
 --- !u!61 &1645007345
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -143221,9 +143131,9 @@ MonoBehaviour:
   - key: level1
     locked: 1
     doors:
-    - {fileID: 2024990709}
-    - {fileID: 2024990709}
-    - {fileID: 2024990709}
+    - {fileID: 898212654}
+    - {fileID: 823987555}
+    - {fileID: 2024990713}
   dialogueBoxController: {fileID: 2002670157}
 --- !u!1 &1899599055
 GameObject:
@@ -143537,7 +143447,6 @@ GameObject:
   - component: {fileID: 1965385770}
   - component: {fileID: 1965385769}
   - component: {fileID: 1965385768}
-  - component: {fileID: 1965385767}
   - component: {fileID: 1965385766}
   - component: {fileID: 1965385765}
   m_Layer: 0
@@ -143597,20 +143506,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.09708265}
   m_Radius: 0.20004708
---- !u!114 &1965385767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965385764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf363845bbab46f4ea193bee4c3448a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectiveHandler: {fileID: 2068826891}
-  dialogueBox: {fileID: 2002670157}
 --- !u!61 &1965385768
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -144725,7 +144620,6 @@ GameObject:
   - component: {fileID: 2103355557}
   - component: {fileID: 2103355556}
   - component: {fileID: 2103355555}
-  - component: {fileID: 2103355554}
   - component: {fileID: 2103355553}
   - component: {fileID: 2103355552}
   m_Layer: 0
@@ -144785,20 +144679,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.096676834}
   m_Radius: 0.19964129
---- !u!114 &2103355554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103355551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf363845bbab46f4ea193bee4c3448a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectiveHandler: {fileID: 2068826891}
-  dialogueBox: {fileID: 2002670157}
 --- !u!61 &2103355555
 BoxCollider2D:
   m_ObjectHideFlags: 0
