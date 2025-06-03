@@ -26,24 +26,24 @@ public class InteractionBox : MonoBehaviour
 
     // Door opening trigger
     private void OnTriggerEnter2D(Collider2D other) {
-            nearestNPC = other.gameObject;
-            canInteract = true;
-            dialogueText.text = message;
+        nearestNPC = other.gameObject;
+        canInteract = true;
+        dialogueText.text = message;
 
-            if (interactBox != null) {
-                interactBox.SetActive(canInteract);
-            }
+        if (interactBox != null) {
+            interactBox.SetActive(canInteract);
+        }
     }
 
     // Door closing trigger
     private void OnTriggerExit2D(Collider2D other)
     {
-            nearestNPC = null;
-            canInteract = false;
-            dialogueText.text = "";
+        nearestNPC = null;
+        canInteract = false;
+        dialogueText.text = "";
 
-            if (interactBox != null) {
-                interactBox.SetActive(canInteract);
-            }
+        if (interactBox != null) {
+            interactBox.SetActive(canInteract);
+        }
     }
 }

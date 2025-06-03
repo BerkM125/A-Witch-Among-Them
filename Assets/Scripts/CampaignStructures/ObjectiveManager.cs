@@ -3,6 +3,7 @@ using UnityEngine;
 using CampaignObjects;
 using UnityEngine.SceneManagement;
 using LevelManagerNamespace;
+using InstructionSuite;
 
 public class ObjectiveManager : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class ObjectiveManager : MonoBehaviour
     {
         Debug.Log("ObjectiveManager started");
         Debug.Log("Current Level: " + LevelManager.currentLevel);
-        
+        InstructionHandler.CreateInstruction("Hello world!");
         LevelManager.InitializeManagerLevels(); // Initialize the manager levels
         LevelManager.LoadLevel(LevelManager.currentLevel); // Load the current level
     }
