@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using LevelManagerNamespace;
 
 public class ElaraConversation : MonoBehaviour
 {
@@ -21,6 +22,9 @@ public class ElaraConversation : MonoBehaviour
     // Upon collision with the player, start conversation and ProgressObjective
     private void OnCollisionEnter2D(Collision2D other)
     {
+        // Ensure week is still at ONE
+        if (LevelManager.currentLevel != 1) return;
+
         if (other.gameObject.name == "Player" && !om.objectives[1].fulfilled)
         {
             // Start the conversation with Elara

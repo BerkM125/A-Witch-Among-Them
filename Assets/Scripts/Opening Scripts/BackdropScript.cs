@@ -22,7 +22,7 @@ public class BackdropScript : MonoBehaviour
     public IEnumerator FadeToNewScene() 
     {
         yield return StartCoroutine(FadeToBlack());
-        SceneManager.LoadScene("New Salem Town"); // Uncomment this line to change the scene after fading
+        SceneManager.LoadScene("New Athens Town"); // Uncomment this line to change the scene after fading
     }
 
     public IEnumerator FadeToBlack()

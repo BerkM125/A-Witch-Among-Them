@@ -3,6 +3,8 @@ using System.Collections;
 using System.IO;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
+using LevelManagerNamespace;
+
 public class ClueCollector : MonoBehaviour
 {
     public GameObject interactBox;
@@ -87,7 +89,7 @@ public class ClueCollector : MonoBehaviour
                 }
 
                 JArray evidenceArray = (JArray)jsonObject["prototype"]["evidence"];
-                evidenceArray.Add($"Elara Vex owns a {evidenceObject.name}...");
+                evidenceArray.Add($"{LevelManager.levelTarget} owns a {evidenceObject.name}...");
 
                 jsonObject["prototype"]["evidence"] = evidenceArray;
                 string jsonFileContent = jsonObject.ToString();

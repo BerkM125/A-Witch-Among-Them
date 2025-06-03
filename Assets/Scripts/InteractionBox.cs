@@ -29,7 +29,7 @@ public class InteractionBox : MonoBehaviour
             canInteract = true;
             dialogueText.text = message;
             interactBox.SetActive(canInteract);
-            Debug.Log("Opening door!!!");
+            //Debug.Log("Opening door!!!");
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -39,6 +39,6 @@ public class InteractionBox : MonoBehaviour
             dialogueText.text = "";
             // Do this manually, putting in update is inefficient and causes errors.
             interactBox.SetActive(canInteract);
-            Debug.Log("Closing door!!!");
+            //Debug.Log("Closing door!!!");
     }
 }

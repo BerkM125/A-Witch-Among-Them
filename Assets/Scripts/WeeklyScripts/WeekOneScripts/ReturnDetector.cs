@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using LevelManagerNamespace;
 
 public class ReturnDetector : MonoBehaviour
 {
@@ -29,6 +30,8 @@ public class ReturnDetector : MonoBehaviour
     // Upon collision with the player, progress objective
     private void OnCollisionEnter2D(Collision2D other)
     {
+        if (LevelManager.currentLevel > 2) return;
+
         Debug.Log("collision occurring with " + other.gameObject.name);
         if (other.gameObject.name == "Player" && om.objectives[2].fulfilled && !om.objectives[3].fulfilled)
         {

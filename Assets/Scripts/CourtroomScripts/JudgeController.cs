@@ -3,7 +3,9 @@ using System.Collections;
 using System.IO;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
+using LevelManagerNamespace;
 using ModelBridge;
 using Instructions;
 
@@ -11,9 +13,15 @@ public class JudgeController : MonoBehaviour
 {
     // Will increase with every level.
     public int interactionLimit = 2;
+
+    // Change this based on which character is on trial.
+    public string accusedCharacter = "character_accused";
     
     [SerializeField]
     private GameObject player;
+    
+    [SerializeField]
+    private GameObject george_obj; // George Heff character object, only used in level 2
 
     private PlayerDialogue playerDialogue;
     string judgeInstructions;
@@ -31,6 +39,15 @@ public class JudgeController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (LevelManager.currentLevel == 1) {
+            accusedCharacter = "character_accused";
+        } else if (LevelManager.currentLevel == 2) {
+            Destroy(GameObject.Find("character_accused"));
+            george_obj.SetActive(true);
+
+            accusedCharacter = "george_heff";
+        }
+
         Instantiate(playerPrefab, new Vector3(5.01000023f,-0.699999988f,0f), Quaternion.identity);
         Instantiate(playerPrefab, new Vector3(5.01000023f,-0.699999988f,0f), Quaternion.identity);
 
@@ -42,7 +59,7 @@ public class JudgeController : MonoBehaviour
         contextSpeakerMap["playerContext"] = "The player said";
 
         contextDialogueMap["judgeContext"] = "character_judge";
-        contextDialogueMap["accusedContext"] = "character_accused";
+        contextDialogueMap["accusedContext"] = accusedCharacter;
         contextDialogueMap["playerContext"] = "character_player";
 
         player = GameObject.Find("PlayerCourt");
@@ -178,7 +195,13 @@ public class JudgeController : MonoBehaviour
                 }
 
                 // Type out the dialogue!
-                StartCoroutine(dialogueBoxController.TypeDialogue());
+                StartCoroutine(dialogueBoxController.ShowDialogueExtended((string arg) => {
+                    // Change scene to New Athens Town and set currentLevel to 2
+                    LevelManager.currentLevel += 1;
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("New Athens Town");
+                }));
+
+                // Change scene to 
             } 
             else {
                 playerDialogue.EnableChat();
