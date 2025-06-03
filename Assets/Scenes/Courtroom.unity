@@ -3069,12 +3069,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c094e2f0ee1f446ad11adad59e3c2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueBoxController: {fileID: 127262928}
+  playerPrefab: {fileID: 606910563}
   interactionLimit: 2
   accusedCharacter: character_accused
   player: {fileID: 606910563}
-  george_obj: {fileID: 1537264919}
-  dialogueBoxController: {fileID: 127262928}
-  playerPrefab: {fileID: 606910563}
+  accusedCharacters:
+  - {fileID: 1463889824}
+  - {fileID: 1537264919}
 --- !u!1 &1427143073
 GameObject:
   m_ObjectHideFlags: 0
@@ -3429,7 +3431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1537264920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3646,7 +3648,7 @@ Transform:
   m_GameObject: {fileID: 1537264919}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.76, y: -0.62, z: 0}
+  m_LocalPosition: {x: 9.76, y: -0.84, z: 0}
   m_LocalScale: {x: 6.398434, y: 6.398434, z: 6.398434}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -13546,15 +13548,15 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1669309494}
+  - {fileID: 1604200707}
   - {fileID: 1292325565}
   - {fileID: 1745115657}
   - {fileID: 2106898184}
   - {fileID: 1162810041}
   - {fileID: 941725264}
   - {fileID: 892634467}
-  - {fileID: 1604200707}
   - {fileID: 1463889828}
-  - {fileID: 1337544828}
-  - {fileID: 823244179}
-  - {fileID: 606910573}
   - {fileID: 1537264927}
+  - {fileID: 1337544828}
+  - {fileID: 606910573}
+  - {fileID: 823244179}

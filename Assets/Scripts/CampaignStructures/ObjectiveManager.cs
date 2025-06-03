@@ -16,12 +16,9 @@ public class ObjectiveManager : MonoBehaviour
     {
         Debug.Log("ObjectiveManager started");
         Debug.Log("Current Level: " + LevelManager.currentLevel);
-        if (LevelManager.currentLevel == 1) 
-            LevelManager.LoadLevelOne();
-        else if (LevelManager.currentLevel == 2) 
-            LevelManager.LoadLevelTwo();
-        else if (LevelManager.currentLevel == 3) 
-            LevelManager.LoadLevelThree();
+        
+        LevelManager.InitializeManagerLevels(); // Initialize the manager levels
+        LevelManager.LoadLevel(LevelManager.currentLevel); // Load the current level
     }
 
     // Update is called once per frame

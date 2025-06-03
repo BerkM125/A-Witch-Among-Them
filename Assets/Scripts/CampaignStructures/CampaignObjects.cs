@@ -23,6 +23,7 @@ namespace CampaignObjects {
         public int interactionLimit;
         
         public string levelTarget;
+        public string levelTargetID; // Separate from levelTarget, this is the name of the GameObject itself.
         // This key will be used to unlock the necessary doors.
         public string doorLevelKey;
         // Thing that stores the evidence?
@@ -39,22 +40,26 @@ namespace CampaignObjects {
             doorManager.ChangeLevelLockStatus(doorLevelKey, false);
         }
         
-        public LevelContainer(string levelTarget, int levelNumber, int interactionLimit, string doorLevelKey) {
+        // Ideal constructor
+        public LevelContainer(string levelTarget, string levelTargetID, int levelNumber, int interactionLimit, string doorLevelKey) {
             this.levelTarget = levelTarget;
+            this.levelTargetID = levelTargetID; // This is the name of the GameObject itself.
             this.levelNumber = levelNumber;
             this.interactionLimit = interactionLimit;
             this.doorLevelKey = doorLevelKey;
-            this.objectives = new Objective[0]; // Initialize with an empty array
+            this.objectives = new Objective[9]; // Initialize with an empty array
             this.doorManager = GameObject.Find("DoorManager").GetComponent<DoorManager>();
         }
 
-        public LevelContainer() {
-            this.levelTarget = "Elara Vex";
-            this.levelNumber = 1;
-            this.interactionLimit = 2;
-            this.doorLevelKey = "level1";
-            this.objectives = new Objective[9]; // Initialize with an empty array
-            this.doorManager = GameObject.Find("DoorManager").GetComponent<DoorManager>();
+        // Default constructor will assume level is 1
+        public LevelContainer() : this("Elara Vex", "character_accused", 1, 2, "level1") {}
+
+        public override string ToString()
+        {
+            return $@"Level Target: {this.levelTarget}
+                     Level Number: {this.levelNumber}
+                     Interaction Limit: {this.interactionLimit}
+                     Door Level Key: {this.doorLevelKey}";
         }
     }
 

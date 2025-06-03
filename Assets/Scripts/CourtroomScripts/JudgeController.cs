@@ -11,6 +11,10 @@ using Instructions;
 
 public class JudgeController : MonoBehaviour
 {
+    // Public variables for Unity Editor
+    public DialogueBoxController dialogueBoxController;
+    public GameObject playerPrefab;
+
     // Will increase with every level.
     public int interactionLimit = 2;
 
@@ -18,12 +22,13 @@ public class JudgeController : MonoBehaviour
     public string accusedCharacter = "character_accused";
     
     [SerializeField]
-    private GameObject player;
+    private GameObject player; // Player gameobject in the courtroom.
     
     [SerializeField]
-    private GameObject george_obj; // George Heff character object, only used in level 2
+    private GameObject[] accusedCharacters; // Load with ALL possible accused characters on the stand.
 
-    private PlayerDialogue playerDialogue;
+    // Private variables for internal use
+    PlayerDialogue playerDialogue;
     string judgeInstructions;
     string judgePrompt;
     string currentResponse;
@@ -31,29 +36,34 @@ public class JudgeController : MonoBehaviour
     string currentContext = "judgeContext";
     bool accusedResponded = false;
     int interactionCount = 0;
-    public DialogueBoxController dialogueBoxController;
-    public GameObject playerPrefab;
 
+    // Maps to make speaker and dialogue retrieval easier
     Dictionary<string, string> contextSpeakerMap = new Dictionary<string, string>();
     Dictionary<string, string> contextDialogueMap = new Dictionary<string, string>();
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (LevelManager.currentLevel == 1) {
-            accusedCharacter = "character_accused";
-        } else if (LevelManager.currentLevel == 2) {
-            Destroy(GameObject.Find("character_accused"));
-            george_obj.SetActive(true);
-
-            accusedCharacter = "george_heff";
+        // Establish the accused character and disable the others.
+        accusedCharacter = LevelManager.managerLevels[LevelManager.currentLevel - 1].levelTarget;
+        foreach (GameObject character in accusedCharacters) {
+            if (character.name == accusedCharacter) {
+                character.SetActive(true);
+            } else {
+                character.SetActive(false);
+            }
         }
 
-        Instantiate(playerPrefab, new Vector3(5.01000023f,-0.699999988f,0f), Quaternion.identity);
+        // Set interaction limit from level manager
+        interactionLimit = LevelManager.managerLevels[LevelManager.currentLevel - 1].interactionLimit;
+
+        // Instantiate player prefabs at the specified position 
         Instantiate(playerPrefab, new Vector3(5.01000023f,-0.699999988f,0f), Quaternion.identity);
 
         // CLEAR FILE BEFORE ANYTHING
         ClearFile();
 
+        // Initialize context speaker and dialogue maps
         contextSpeakerMap["judgeContext"] = "You, the judge, said";
         contextSpeakerMap["accusedContext"] = "The accused person said";
         contextSpeakerMap["playerContext"] = "The player said";
@@ -62,9 +72,12 @@ public class JudgeController : MonoBehaviour
         contextDialogueMap["accusedContext"] = accusedCharacter;
         contextDialogueMap["playerContext"] = "character_player";
 
+        // Initialize dialogue sequence and find player object
         player = GameObject.Find("PlayerCourt");
         playerDialogue = player.GetComponent<PlayerDialogue>();
 
+        // Dialogue sequence coroutines must END before another is triggered to avoid feeding the
+        // dialogue buffers with multiple dialogues at once through multiple coroutines.
         dialogueBoxController.AddDialogue("character_judge", "Give me a minute before I deliver my opening statement...");
         StartCoroutine(dialogueBoxController.ShowDialogueExtended((string arg) => {
             SetCurrentContext("judgeContext");
@@ -83,6 +96,7 @@ public class JudgeController : MonoBehaviour
     {
     }
 
+    // Set the current context and speaker based on the context
     public void SetCurrentContext(string context)
     {
         Debug.Log("Was called");
@@ -113,6 +127,7 @@ public class JudgeController : MonoBehaviour
             string promptType = "";
             string contextType = "";
 
+            // Determine the type of instruction and set the appropriate variables
             switch (instructionType) {
                 case Instructions.JudgeStatement.DELIVER_JUDGMENT:
                     judgementType = "finalInstructions";
@@ -146,9 +161,11 @@ public class JudgeController : MonoBehaviour
                     break;
             }
 
+            // Read the JSON file and parse it
             string jsonContent = File.ReadAllText(filePath);
             JObject jsonObject = JObject.Parse(jsonContent);
 
+            // Prepare the judge instructions and prompt based on the context type
             judgeInstructions = "";
             if (contextType == "judgeContext") {
                 interactionCount++;
@@ -166,8 +183,10 @@ public class JudgeController : MonoBehaviour
                                         more innocent.\n\n";
             } 
 
+            // Add to the judge's context or its "memory"
             judgeInstructions += jsonObject["prototype"][judgementType].ToString();
-            Debug.Log("Prompt Type: " + promptType);
+
+            // Prepare the judge's context and memory
             judgePrompt = jsonObject["prototype"][promptType].ToString() + $@"
                 Use the context below to aid your speech: 
                 {jsonObject["prototype"][contextType]}";

@@ -89,7 +89,7 @@ public class ClueCollector : MonoBehaviour
                 }
 
                 JArray evidenceArray = (JArray)jsonObject["prototype"]["evidence"];
-                evidenceArray.Add($"{LevelManager.levelTarget} owns a {evidenceObject.name}...");
+                evidenceArray.Add($"{LevelManager.managerLevels[LevelManager.currentLevel-1].levelTarget} owns a {evidenceObject.name}...");
 
                 jsonObject["prototype"]["evidence"] = evidenceArray;
                 string jsonFileContent = jsonObject.ToString();
