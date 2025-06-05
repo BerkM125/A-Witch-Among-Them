@@ -17,7 +17,22 @@ public class ObjectiveManager : MonoBehaviour
     {
         Debug.Log("ObjectiveManager started");
         Debug.Log("Current Level: " + LevelManager.currentLevel);
-        InstructionHandler.CreateInstruction("Hello world!");
+
+        InstructionHandler.InitializeInstructions(); // Initialize the instruction handler
+
+        if (LevelManager.currentLevel == 1) {
+            InstructionHandler.CreateInstruction($@"Pssst... you don't need to know who I am. Just know that our interests are currently aligned... across worlds. Your job in this town is to accuse every single important official of witchcraft and get them executed in a court of law. The due process of witch trial shall keep your true identity, a REAL WITCH, hidden from the town of New Athens. Good luck with your first target... she should be a real easy one...");    
+        }
+        else if (LevelManager.currentLevel == 2) {
+            InstructionHandler.CreateInstruction($@"Good... \n\nVery, very good...");    
+        }
+        else if (LevelManager.currentLevel == 3) {
+            InstructionHandler.CreateInstruction($@"Good... \n\nVery, very good...");    
+        }
+        else if (LevelManager.currentLevel == 4) {
+            InstructionHandler.CreateInstruction($@"Good... \n\nVery, very good...");    
+        }
+
         LevelManager.InitializeManagerLevels(); // Initialize the manager levels
         LevelManager.LoadLevel(LevelManager.currentLevel); // Load the current level
     }

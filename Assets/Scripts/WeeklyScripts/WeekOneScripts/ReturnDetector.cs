@@ -8,7 +8,6 @@ public class ReturnDetector : MonoBehaviour
     public Image backdrop;
     public DialogueBoxController dialogueBox;
     public GameObject cluesHolder;
-    public GameObject elara;
 
     private ObjectiveManager om;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -28,9 +27,12 @@ public class ReturnDetector : MonoBehaviour
         other.gameObject.GetComponent<PlayerController>().playerLocked = !other.gameObject.GetComponent<PlayerController>().playerLocked;
     }
     // Upon collision with the player, progress objective
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (LevelManager.currentLevel > 2) return;
+        if (LevelManager.currentLevel > 4) return;
+
+        cluesHolder = (LevelManager.managerLevels[LevelManager.currentLevel-1].cluesHolder);
+        Debug.Log("Clues holder: " + cluesHolder.name);
 
         Debug.Log("collision occurring with " + other.gameObject.name);
         if (other.gameObject.name == "Player" && om.objectives[2].fulfilled && !om.objectives[3].fulfilled)
@@ -45,9 +47,9 @@ public class ReturnDetector : MonoBehaviour
             StartCoroutine(backdrop.GetComponent<BackdropScript>().FadeToNightTime());
             om.ProgressObjective();
 
-            // Activate the evidence! Hide Elara
+            // Activate the evidence! Hide relevant characters
             cluesHolder.SetActive(true);
-            elara.SetActive(false);
+            GameObject.Find(LevelManager.managerLevels[LevelManager.currentLevel-1].levelTargetID).SetActive(false);
         }
 
         if (other.gameObject.name == "Player" && om.objectives[6].fulfilled && !om.objectives[7].fulfilled)
@@ -64,7 +66,9 @@ public class ReturnDetector : MonoBehaviour
 
             // Revert all changes
             cluesHolder.SetActive(false);
-            elara.SetActive(true);
+
+            // THIS WONT WORK becuase player is already inactive!
+            //GameObject.Find(LevelManager.managerLevels[LevelManager.currentLevel-1].levelTargetID).SetActive(true);
         }
     }
 }

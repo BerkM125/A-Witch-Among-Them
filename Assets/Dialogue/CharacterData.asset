@@ -38,3 +38,9 @@ MonoBehaviour:
     characterImage: {fileID: -1482891655, guid: 23142dee21a22ef4fa26d03067726d5a, type: 3}
     blips:
     - {fileID: 8300000, guid: 6859d58be09970142880a7ca11d86e6c, type: 3}
+  - characterName: Ms. Wallowmore
+    characterId: elizabeth_wallowmore
+    description: Teacher eliza wallowmore
+    characterImage: {fileID: -1482891655, guid: 23142dee21a22ef4fa26d03067726d5a, type: 3}
+    blips:
+    - {fileID: 8300000, guid: 6859d58be09970142880a7ca11d86e6c, type: 3}

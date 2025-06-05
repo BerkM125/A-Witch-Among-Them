@@ -45,7 +45,7 @@ public class JudgeController : MonoBehaviour
     void Start()
     {
         // Establish the accused character and disable the others.
-        accusedCharacter = LevelManager.managerLevels[LevelManager.currentLevel - 1].levelTarget;
+        accusedCharacter = LevelManager.managerLevels[LevelManager.currentLevel - 1].levelTargetID;
         foreach (GameObject character in accusedCharacters) {
             if (character.name == accusedCharacter) {
                 character.SetActive(true);
@@ -207,9 +207,11 @@ public class JudgeController : MonoBehaviour
                 // If it exists, debug.log "YOU HAVE WON!" but ohterwise, debug.log "YOU HAVE LOST!".
                 if (response.ToLower().Contains("not guilty") || response.ToLower().Contains("innocent")) {
                     Debug.Log("YOU HAVE LOST!");
+                    LevelManager.playerLost = true;
                     dialogueBoxController.AddDialogue("character_judge", "You have lost loser! The accused is not guilty. AT THIS POINT, CHANGE THE SCENE TO EXECUTION OR YOUR EXECUTION.");
                 } else {
                     Debug.Log("YOU HAVE WON!");
+                    LevelManager.playerLost = false;
                     dialogueBoxController.AddDialogue("character_judge", "You have won! The accused is guilty. AT THIS POINT, CHANGE THE SCENE TO EXECUTION OR YOUR EXECUTION.");
                 }
 
@@ -217,7 +219,7 @@ public class JudgeController : MonoBehaviour
                 StartCoroutine(dialogueBoxController.ShowDialogueExtended((string arg) => {
                     // Change scene to New Athens Town and set currentLevel to 2
                     LevelManager.currentLevel += 1;
-                    UnityEngine.SceneManagement.SceneManager.LoadScene("New Athens Town");
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("ExecutionGround");
                 }));
 
                 // Change scene to 

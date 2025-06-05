@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using LevelManagerNamespace;
 
-public class OutsideDetector : MonoBehaviour
+public class GroundsScript : MonoBehaviour
 {
     public GameObject objectiveHandler;
     public DialogueBoxController dialogueBox;
@@ -23,7 +23,7 @@ public class OutsideDetector : MonoBehaviour
     // Upon collision with the player, progress objective
     private void OnTriggerEnter2D(Collider2D other)
     {  
-        if (LevelManager.currentLevel > 3) return;
+        if (LevelManager.currentLevel != 3) return;
          
         Debug.Log("collision occurring with " + other.gameObject.name);
         if (other.gameObject.name == "Player" && om.objectives[1].fulfilled && !om.objectives[2].fulfilled)

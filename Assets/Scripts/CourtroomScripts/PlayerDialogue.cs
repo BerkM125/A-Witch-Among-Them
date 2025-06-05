@@ -5,6 +5,7 @@ using System.Collections;
 using System.IO;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
+using InstructionSuite;
 
 public class PlayerDialogue : MonoBehaviour
 {
@@ -20,6 +21,18 @@ public class PlayerDialogue : MonoBehaviour
     {
         judgeNPC = GameObject.Find("Judge");
         judgeController = judgeNPC.GetComponent<JudgeController>();
+        InstructionHandler.InitializeInstructions();
+        InstructionHandler.CreateInstruction("Hey. You. It's time for the real work to begin. " +
+                                             "Check your journal in the top right if you need to remember " +
+                                             "what evidence you've collected so far. " +
+                                             "BRING ALL OF YOUR EVIDENCE UP. SLANDER YOUR TARGET. " +
+                                             "ABSOLUTELY DO NOT LET THEM LEAVE THIS TRIAL ALIVE. " +
+                                             "You will have limited chances to talk to and convince the judge " +
+                                             "that your target is a witch, and you must do this convincingly. " +
+                                             "Avoid speaking in arbitrary words, and you will avoid certain death." +
+                                             "\n\nYes, you heard that right. If you fail to convince the judge, " + 
+                                             "this town will never trust you again, and you will be executed. " +
+                                             "\nDo not fail.");
     }
 
     // Update is called once per frame

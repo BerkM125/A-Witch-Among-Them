@@ -21,7 +21,7 @@ namespace CampaignObjects {
     public class LevelContainer {
         public int levelNumber;
         public int interactionLimit;
-        
+        public GameObject cluesHolder; // The parent to the set of clues this level has.
         public string levelTarget;
         public string levelTargetID; // Separate from levelTarget, this is the name of the GameObject itself.
         // This key will be used to unlock the necessary doors.
@@ -41,7 +41,7 @@ namespace CampaignObjects {
         }
         
         // Ideal constructor
-        public LevelContainer(string levelTarget, string levelTargetID, int levelNumber, int interactionLimit, string doorLevelKey) {
+        public LevelContainer(string levelTarget, string levelTargetID, int levelNumber, int interactionLimit, string doorLevelKey, string cluesHolderName) {
             this.levelTarget = levelTarget;
             this.levelTargetID = levelTargetID; // This is the name of the GameObject itself.
             this.levelNumber = levelNumber;
@@ -49,10 +49,12 @@ namespace CampaignObjects {
             this.doorLevelKey = doorLevelKey;
             this.objectives = new Objective[9]; // Initialize with an empty array
             this.doorManager = GameObject.Find("DoorManager").GetComponent<DoorManager>();
+            this.cluesHolder = GameObject.Find(cluesHolderName);
+            this.cluesHolder.SetActive(false); // Initially set the clues holder to inactive
         }
 
         // Default constructor will assume level is 1
-        public LevelContainer() : this("Elara Vex", "character_accused", 1, 2, "level1") {}
+        public LevelContainer() : this("Elara Vex", "character_accused", 1, 2, "level1", "Clues") {}
 
         public override string ToString()
         {

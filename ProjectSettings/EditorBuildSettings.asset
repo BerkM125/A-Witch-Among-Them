@@ -14,8 +14,20 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Courtroom.unity
     guid: 98a2862f9af64464a9229f6c14709deb
+  - enabled: 1
+    path: Assets/Scenes/ExecutionGround.unity
+    guid: fe2be22c5e4b5ae4e8289f1d2212249d
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: a55fc03c2b4f5174eb3d19af28d2d7fb
+  - enabled: 1
+    path: Assets/Scenes/Cemetary.unity
+    guid: 5f599649025c44c448ddbf10ad443ca4
   - enabled: 0
     path: Assets/Scenes/Demo.unity
     guid: 65599e2c3ad0adf42bee71a81a977013
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 80b1bf6856aac834dad8973ba3c3a490
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

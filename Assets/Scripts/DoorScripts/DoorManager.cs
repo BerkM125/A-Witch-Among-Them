@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Windows.WebCam;
+using LevelManagerNamespace;
 
 public class DoorManager : MonoBehaviour
 {
@@ -22,6 +23,11 @@ public class DoorManager : MonoBehaviour
         levelDictionary = new Dictionary<string, Level>();
         foreach (Level level in levels)
         {
+            if(level.key != ("level" + LevelManager.currentLevel)) {
+                Debug.Log("level.key was " + level.key + ", curr level was " + LevelManager.currentLevel);
+                continue;
+            }
+
             foreach (DoorController door in level.doors)
             {
                 if (!door) continue;
